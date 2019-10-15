@@ -1,0 +1,28 @@
+{
+  "name": "MlleLaSalxpe",
+  "version": "1.0.0",
+  "description": "Landing page for MlleLaSalxpe",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "node server/server.js",
+    "watch:sass": "node-sass public/sass/main.scss public/css/style.css -w",
+    "start": "node server/server.js",
+    "compile:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
+    "concat:css": "concat -o public/css/style.concat.css public/css/icon-fonts.css public/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.concat.css -o public/css/style.prefix.css",
+    "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
+    "build:css": "yarn compile:sass & yarn concat:css & yarn prefix:css & yarn compress:css"
+  },
+  "repository": "git@github.com:stamandf/MlleLaSalxpe.git",
+  "author": "Florence <stamandf@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.12.0",
+    "postcss-cli": "^6.1.3"
+  }
+}
