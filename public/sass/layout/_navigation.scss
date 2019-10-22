@@ -1,0 +1,35 @@
+.navigation {
+    height: auto;
+    justify-content: space-between; //display left right to the end and then middle evenly spaced between
+    align-items: center;
+    padding: 3rem 10%;
+    
+    &__list {
+        // float: right;
+        text-align: center;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    &__item {
+        display: inline-block; //All menu items side-by-side
+        padding: 0 5rem 0 0;
+        &:last-child {
+            padding: 0;
+        }
+    }
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            transition: all 0.3s ease 0s;
+            color: $color-black;
+        }
+        &:hover,
+        &:active {
+            color: $color-primary-light3;
+        }
+    }
+    
+
+}

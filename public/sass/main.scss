@@ -1,0 +1,41 @@
+// @import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+// @import "base/animation";
+@import "base/base";
+@import "base/typography";
+
+// @import "base/utilities";
+
+// @import "pages/home";
+
+// @import "components/button";
+// @import "components/composition";
+// @import "components/feature-box";
+// @import "components/card";
+// @import "components/story";
+// @import "components/bg-video";
+// @import "components/form";
+// @import "components/footer";
+// @import "components/popup";
+
+@import "layout/banner";
+@import "layout/header";
+@import "layout/grid";
+@import "layout/navigation";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    //This describes what 1rem is
+    font-size: 62.5%; //Definition of 1rem = 62.5% * 16px;
+}
+body {
+    box-sizing: border-box;
+}

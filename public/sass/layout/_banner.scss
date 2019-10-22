@@ -1,0 +1,22 @@
+.banner {
+    &__box {
+        height: 80vh;
+        background-image: linear-gradient(
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-medium, 0.8),
+            rgba($color-primary-dark, 0.8),
+            rgba($color-primary-dark3, 0.8)
+        );
+        // background-image: linear-gradient(
+        //     to right bottom,
+        //     rgba($color-primary-light, 0.8),
+        //     rgba($color-primary-medium, 0.8),
+        //     rgba($color-primary-dark, 0.8),
+        //     rgba($color-primary-darkest, 0.8)
+        // );
+        background-size: cover;
+        background-position: left;
+        position: relative;
+    }
+}
+// rgba($color-primary-darker, 0.8),
