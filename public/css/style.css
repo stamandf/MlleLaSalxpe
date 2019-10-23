@@ -63,19 +63,30 @@ body {
     margin-bottom: 5rem;
     font-size: 4rem;
     font-weight: 700;
-    letter-spacing: 2rem; }
+    letter-spacing: 2.5rem; }
   .heading-secondary--sub {
     display: block;
     margin-bottom: 2rem;
     font-size: 3rem;
     font-weight: 600;
-    letter-spacing: 1rem; }
+    letter-spacing: .8rem; }
   .heading-secondary--sub2 {
     display: block;
     margin-bottom: 3rem;
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: .5rem; }
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 2rem; }
+
+.paragraph {
+  font-size: 1.6rem;
+  text-align: justify;
+  margin-bottom: 3rem; }
 
 .u-center-text {
   text-align: center !important; }
