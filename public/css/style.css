@@ -39,18 +39,74 @@ body {
   font-weight: 400;
   color: #1b1b1b; }
 
+.heading-primary {
+  color: #faf0e9;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  padding-top: 5%; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-primary {
+      letter-spacing: 1rem;
+      font-size: 5rem; } }
+
+.heading__text-box {
+  text-align: center; }
+
+.heading-secondary {
+  text-transform: uppercase;
+  color: #1b1b1b; }
+  .heading-secondary--main {
+    display: block;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2rem; }
+  .heading-secondary--sub {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1rem; }
+  .heading-secondary--sub2 {
+    display: block;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .5rem; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-medium {
+      margin-bottom: 3rem !important; } }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-bottom-big {
+      margin-bottom: 5rem !important; } }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
 .section-banner__box {
-  height: 85vh;
+  height: 70vh;
   background-image: linear-gradient(rgba(219, 178, 93, 0.8), rgba(160, 88, 36, 0.8), rgba(112, 62, 25, 0.8), rgba(56, 26, 22, 0.8));
   background-size: cover;
   background-position: left;
   position: relative; }
-
-.section-banner__title {
-  color: #faf0e9;
-  text-align: center;
-  font-size: 3.5rem;
-  padding-top: 5%; }
 
 .header__logo-box {
   position: relative;
