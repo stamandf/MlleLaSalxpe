@@ -1,0 +1,41 @@
+.footer {
+    background-color: $color-primary-dark2;
+    color: $color-primary-light4;
+    font-size: $small-font-size;
+    // text-transform: uppercase;
+
+    &__navigation {
+        display: block;
+    }
+
+    &__list {
+        list-style: none;
+    }
+    &__item {
+       display: block;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-primary-light3;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary-light4;
+        }
+    }
+    &__paragraph {
+        color: $color-primary-light3;
+        font-size: 1.4rem;
+    }
+
+    &__icon {
+        font-size: 4rem;
+        color: $color-primary-light3;
+        padding: 0;
+        
+    }
+}

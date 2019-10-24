@@ -81,12 +81,20 @@ body {
   font-size: 2rem;
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: 4rem;
   margin-bottom: 2rem; }
 
 .paragraph {
   font-size: 1.6rem;
   text-align: justify;
   margin-bottom: 3rem; }
+
+.heading-footer {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -106,15 +114,41 @@ body {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
+.u-margin-top-small {
+  margin-top: 4rem !important; }
+
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.footer {
+  background-color: #481a0f;
+  color: #faf0e9;
+  font-size: 1.4rem; }
+  .footer__navigation {
+    display: block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: block; }
+  .footer__link:link, .footer__link:visited {
+    color: #d19e33;
+    text-decoration: none; }
+  .footer__link:hover, .footer__link:active {
+    color: #faf0e9; }
+  .footer__paragraph {
+    color: #d19e33;
+    font-size: 1.4rem; }
+  .footer__icon {
+    font-size: 4rem;
+    color: #d19e33;
+    padding: 0; }
+
 .section-banner__box {
   height: 70vh;
-  background-image: linear-gradient(rgba(219, 178, 93, 0.8), rgba(160, 88, 36, 0.8), rgba(112, 62, 25, 0.8), rgba(56, 26, 22, 0.8));
+  background-image: linear-gradient(rgba(255, 183, 0, 0.8), rgba(219, 178, 93, 0.8), rgba(160, 88, 36, 0.8), rgba(112, 62, 25, 0.8), rgba(56, 26, 22, 0.8));
   background-size: cover;
   background-position: left;
   position: relative; }
