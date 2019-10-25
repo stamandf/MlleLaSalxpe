@@ -126,35 +126,67 @@ body {
   background-color: #481a0f;
   color: #faf0e9;
   font-size: 1.4rem;
-  padding: 4rem; }
+  padding-top: 4rem;
+  padding-bottom: 6rem; }
   .footer__navigation {
     display: block; }
   .footer__list {
     list-style: none; }
   .footer__item {
-    display: block; }
+    display: block;
+    padding-bottom: 1rem; }
+    .footer__item:last-child {
+      padding-bottom: 0; }
   .footer__link:link, .footer__link:visited {
-    color: #d19e33;
+    color: #bababa;
     text-decoration: none; }
   .footer__link:hover, .footer__link:active {
     color: #faf0e9; }
-  .footer__paragraph {
-    color: #d19e33;
-    font-size: 1.4rem; }
+  .footer__contact {
+    color: #bababa;
+    line-height: 5rem; }
   .footer__icon {
     font-size: 4rem;
-    color: #d19e33;
-    padding: 0; }
+    color: #bababa;
+    padding: 0;
+    position: relative;
+    top: 1.5rem;
+    padding-right: 1rem; }
 
 .form {
   margin-top: 1rem;
-  background-color: #481a0f; }
+  background-color: #481a0f;
+  color: #bababa; }
   .form__input {
-    font-size: 1.4rem;
     font-family: inherit;
-    color: inherit;
+    color: #bababa;
+    outline: none;
     background-color: #481a0f;
-    border-radius: 2px; }
+    font-size: 1.4rem;
+    padding: 1rem 2rem 1rem 0;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #faf0e9; }
+  .form__input::placeholder {
+    color: #bababa; }
+  .form__button {
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: #bababa;
+    background-color: #481a0f;
+    padding: 1.3rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    width: 13rem;
+    outline: none;
+    transition: all .7s; }
+    .form__button:hover {
+      background-color: #faf0e9;
+      color: #481a0f;
+      cursor: pointer; }
+    .form__button:active {
+      box-shadow: 0 0.5rem 1rem rgba(27, 27, 27, 0.15);
+      transform: translateY(4px); }
 
 .section-banner__box {
   height: 70vh;

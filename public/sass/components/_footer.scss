@@ -2,7 +2,8 @@
     background-color: $color-primary-dark2;
     color: $color-primary-light4;
     font-size: $small-font-size;
-    padding: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
     // text-transform: uppercase;
 
     &__navigation {
@@ -14,12 +15,16 @@
     }
     &__item {
        display: block;
+       padding-bottom: 1rem;
+       &:last-child {
+           padding-bottom: 0;
+       }
     }
 
     &__link {
         &:link,
         &:visited {
-            color: $color-primary-light3;
+            color: $color-primary-light5;
             text-decoration: none;
         }
 
@@ -28,15 +33,19 @@
             color: $color-primary-light4;
         }
     }
-    &__paragraph {
-        color: $color-primary-light3;
-        font-size: 1.4rem;
+    &__contact{
+        color: $color-primary-light5;
+        line-height: 5rem;
     }
-
     &__icon {
         font-size: 4rem;
-        color: $color-primary-light3;
+        color: $color-primary-light5;
         padding: 0;
-        
+        position: relative;
+        top: 1.5rem;
+        padding-right: 1rem;
     }
+    
+
+    
 }

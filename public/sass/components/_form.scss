@@ -1,20 +1,46 @@
 .form {
     margin-top:1rem;
     background-color: $color-primary-dark2;
-
+    color: $color-primary-light5;
+    
     &__input {
+        font-family: inherit;
+        color: $color-primary-light5;
+        outline: none;
+        background-color: $color-primary-dark2;
+        font-size: $small-font-size;
+        padding: 1rem 2rem 1rem 0;
+        width: 100%;
         border: none;
-        border-bottom: 3px solid $color-primary-light4;
+        border-bottom: 2px solid $color-primary-light4;
+    }
+    &__input::placeholder{
+        color: $color-primary-light5;
+    }
+
+    &__button {
         font-size: $default-font-size;
         font-family: inherit;
-        color: inherit;
-        // background-color: $color-primary-dark2;
-        border-radius: 2px;
-        
-    &__button {
-        
-    }    
+        color: $color-primary-light5;
+        background-color: $color-primary-dark2;
+        padding: 1.3rem;
+        margin-top: 1rem;
+        border-radius: 4px;
+        width: 13rem;
+        outline: none;
+        transition: all .7s;
 
-       
+        &:hover {
+            background-color: $color-primary-light4;
+            color: $color-primary-dark2;
+            cursor: pointer;
+        }
+        &:active {
+            box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+            transform: translateY(4px);
+        }
     }
+    
+       
+    
 }
