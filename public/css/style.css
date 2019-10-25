@@ -127,7 +127,9 @@ body {
   color: #faf0e9;
   font-size: 1.4rem;
   padding-top: 4rem;
-  padding-bottom: 6rem; }
+  padding-bottom: 6rem;
+  margin-top: 7rem;
+  height: 25vh; }
   .footer__navigation {
     display: block; }
   .footer__list {
@@ -167,8 +169,10 @@ body {
     width: 100%;
     border: none;
     border-bottom: 2px solid #faf0e9; }
-  .form__input::placeholder {
-    color: #bababa; }
+    .form__input::placeholder {
+      color: #bababa; }
+    .form__input:focus:invalid {
+      border-bottom: 2px solid red; }
   .form__button {
     font-size: 1.6rem;
     font-family: inherit;

@@ -13,10 +13,14 @@
         width: 100%;
         border: none;
         border-bottom: 2px solid $color-primary-light4;
+        &::placeholder{
+            color: $color-primary-light5;
+        }
+        &:focus:invalid {
+            border-bottom: 2px solid red;
+        }
     }
-    &__input::placeholder{
-        color: $color-primary-light5;
-    }
+    
 
     &__button {
         font-size: $default-font-size;
