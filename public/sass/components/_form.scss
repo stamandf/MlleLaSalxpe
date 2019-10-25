@@ -1,0 +1,20 @@
+.form {
+    margin-top:1rem;
+    background-color: $color-primary-dark2;
+
+    &__input {
+        border: none;
+        border-bottom: 3px solid $color-primary-light4;
+        font-size: $default-font-size;
+        font-family: inherit;
+        color: inherit;
+        // background-color: $color-primary-dark2;
+        border-radius: 2px;
+        
+    &__button {
+        
+    }    
+
+       
+    }
+}
