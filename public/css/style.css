@@ -154,6 +154,15 @@ body {
     position: relative;
     top: 1.5rem;
     padding-right: 1rem; }
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 0; }
+  .footer .item {
+    margin: 0 1rem 0 0; }
 
 .form {
   margin-top: 1rem;
@@ -191,6 +200,86 @@ body {
     .form__button:active {
       box-shadow: 0 0.5rem 1rem rgba(27, 27, 27, 0.15);
       transform: translateY(4px); }
+
+.swatches {
+  background-color: inherit;
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.swatch {
+  height: 2.8rem;
+  width: 2.8rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 50%;
+  transition: all .15s; }
+  .swatch:hover {
+    border: 3px solid #000000; }
+  .swatch--color-dp4 {
+    background-color: #BF846C; }
+  .swatch--color-dn4 {
+    background-color: #B27954; }
+  .swatch--color-dg5 {
+    background-color: #B47346; }
+  .swatch--color-dp5 {
+    background-color: #BC7C61; }
+  .swatch--color-dn5 {
+    background-color: #BC855E; }
+  .swatch--color-dg6 {
+    background-color: #AF6B41; }
+  .swatch--color-dp6 {
+    background-color: #BB7B63; }
+  .swatch--color-dn6 {
+    background-color: #AC704D; }
+  .swatch--color-dg7 {
+    background-color: #A65F34; }
+  .swatch--color-dn7 {
+    background-color: #A96842; }
+  .swatch--color-dpg1 {
+    background-color: #8C5741; }
+  .swatch--color-dpp1 {
+    background-color: #834E42; }
+  .swatch--color-dpn1 {
+    background-color: #5E3931; }
+  .swatch--color-dpg2 {
+    background-color: #86513B; }
+  .swatch--color-dpp2 {
+    background-color: #673631; }
+  .swatch--color-dpn2 {
+    background-color: #5C352F; }
+  .swatch--color-dpg3 {
+    background-color: #7B442F; }
+  .swatch--color-dpp3 {
+    background-color: #764038; }
+  .swatch--color-dpn3 {
+    background-color: #5C332A; }
+  .swatch--color-dpg4 {
+    background-color: #794432; }
+  .swatch--color-dpp4 {
+    background-color: #6E382F; }
+  .swatch--color-dpn4 {
+    background-color: #532F28; }
+  .swatch--color-dpg5 {
+    background-color: #6F3821; }
+  .swatch--color-dpp5 {
+    background-color: #663128; }
+  .swatch--color-dpn5 {
+    background-color: #4B2520; }
+  .swatch--color-dpg6 {
+    background-color: #2F100C; }
+  .swatch--color-dpp6 {
+    background-color: #5D2620; }
+  .swatch--color-dpn6 {
+    background-color: #411E19; }
+  .swatch--color-dpg7 {
+    background-color: #52201F; }
+  .swatch--color-dpn7 {
+    background-color: #381A16; }
 
 .section-banner__box {
   height: 70vh;
