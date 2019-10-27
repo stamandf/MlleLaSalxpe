@@ -213,7 +213,7 @@ body {
   border-radius: 50%;
   transition: all .15s; }
   .swatch:hover {
-    border: 3px solid #000000; }
+    border: 3px solid #6a6a6a; }
   .swatch--color-dp4 {
     background-color: #BF846C; }
   .swatch--color-dn4 {

@@ -16,8 +16,9 @@
     margin: 1rem;
     border-radius: 50%;
     transition: all .15s;
+
     &:hover {
-        border: 3px solid #000000;
+        border: 3px solid $color-grey-dark-3;
     }
     //column 1
     &--color-dp4 {
