@@ -1,5 +1,13 @@
 .form {
     margin-top:1rem;
+    // margin-top:1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    // align-items: flex-start;
+    // width: 100%;
+   
     background-color: $color-primary-dark4;
     color: $color-primary-light5;
     
@@ -20,7 +28,6 @@
             border-bottom: 2px solid #b30000;
         }
     }
-    
 
     &__button {
         font-size: $default-font-size;

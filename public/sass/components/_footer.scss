@@ -2,10 +2,11 @@
     background-color: $color-primary-dark4;
     color: $color-primary-light4;
     font-size: $small-font-size;
-    padding-top: 4rem;
-    padding-bottom: 6rem;
+    padding: 10rem;
+    // padding-top: 4rem;
+    // padding-bottom: 6rem;
     margin-top: 7rem;
-    height: 25vh;
+    height: 35vh;
 
     &__navigation {
         display: block;
@@ -46,17 +47,7 @@
         top: 1.5rem;
         padding-right: 1rem;
     }
-    .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 100%;
-        margin-top:0;
-    }
-    .item {
-        margin: 0 1rem 0 0;
-    }
+    
 
     
 }

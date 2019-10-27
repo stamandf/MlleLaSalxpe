@@ -126,10 +126,9 @@ body {
   background-color: #382616;
   color: #faf0e9;
   font-size: 1.4rem;
-  padding-top: 4rem;
-  padding-bottom: 6rem;
+  padding: 10rem;
   margin-top: 7rem;
-  height: 25vh; }
+  height: 35vh; }
   .footer__navigation {
     display: block; }
   .footer__list {
@@ -154,18 +153,13 @@ body {
     position: relative;
     top: 1.5rem;
     padding-right: 1rem; }
-  .footer .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-    margin-top: 0; }
-  .footer .item {
-    margin: 0 1rem 0 0; }
 
 .form {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
   background-color: #382616;
   color: #bababa; }
   .form__input {
