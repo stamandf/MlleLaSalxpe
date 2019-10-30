@@ -16,6 +16,20 @@ Use em instead of rem because media queries responds better with em.
 
 ORDER to do media queries: base + typography > general layout + grid > page layout > components
 */
+.animation-heading {
+  animation-name: fadeInUp;
+  animation-duration: 5s;
+  transition: all ease-in-out; }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  80% { }
+  100% {
+    opacity: 1;
+    transform: translateY(-10px); } }
+
 *,
 *::after,
 *::before {
@@ -24,11 +38,24 @@ ORDER to do media queries: base + typography > general layout + grid > page layo
   box-sizing: inherit; }
 
 html {
+  font-size: 62.5%;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
   padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 ::selection {
   background-color: #c06a2b;
@@ -287,6 +314,9 @@ body {
   top: 0%;
   text-align: center;
   cursor: pointer; }
+
+.header__logo {
+  width: 56.6rem; }
 
 .row {
   max-width: 114rem;
