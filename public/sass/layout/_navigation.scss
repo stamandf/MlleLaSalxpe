@@ -1,3 +1,4 @@
+// Main nativation
 .navigation {
     height: auto;
     justify-content: space-between; //display left right to the end and then middle evenly spaced between
@@ -30,6 +31,29 @@
             color: $color-primary-light3;
         }
     }
-    
 
 }
+
+// Sticky navigation 
+.sticky {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 .2rem 1rem $color-grey-dark-2;
+    padding: 1rem 10%;
+    z-index: 9999;
+    
+}
+.sticky .navigation {
+    padding: 1.5rem 10%;
+    &__item {
+        &:first-child {
+            padding-left: 15rem;
+        }
+        
+    }
+}
+

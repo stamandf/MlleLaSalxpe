@@ -1,11 +1,8 @@
 .header {
-
-    &__logo-box {
-    position: relative;
-    top: 0%;
-    text-align: center;
-    cursor: pointer;
-    }
+        position: relative;
+        top: 0%;
+        text-align: center;
+        cursor: pointer;
     
     &__logo {
         width: 56.6rem;
@@ -13,4 +10,7 @@
             width: 23.5rem
         }
     }
+}
+.sticky .header__logo {
+        width: 18.86rem;
 }
