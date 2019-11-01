@@ -53,9 +53,12 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     body {
-      padding: 0; } }
+      padding: 0;
+      width: 100%;
+      margin: 0;
+      box-sizing: content-box; } }
 
 ::selection {
   background-color: #c06a2b;
@@ -91,6 +94,10 @@ body {
     font-size: 4rem;
     font-weight: 700;
     letter-spacing: 2.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-secondary--main {
+        font-size: 3rem;
+        letter-spacing: 1rem; } }
   .heading-secondary--sub {
     display: block;
     margin-bottom: 2rem;
@@ -308,6 +315,10 @@ body {
   background-size: cover;
   background-position: left;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .section-banner__box {
+      width: 100%;
+      padding: 0ex; } }
 
 .header__logo-box {
   position: relative;
@@ -317,6 +328,9 @@ body {
 
 .header__logo {
   width: 56.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .header__logo {
+      width: 23.5rem; } }
 
 .row {
   max-width: 114rem;

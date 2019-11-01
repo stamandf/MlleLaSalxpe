@@ -1,0 +1,15 @@
+.photo {
+    justify-content: right;
+    &__img {
+        max-width: 30rem;
+        height: auto;
+        @include respond(phone) {
+            height: 30rem;
+            width: 30rem;
+        }
+    
+    }
+    
+    
+    
+}

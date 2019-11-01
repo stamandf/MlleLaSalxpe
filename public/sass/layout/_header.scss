@@ -4,12 +4,13 @@
     position: relative;
     top: 0%;
     text-align: center;
-    // margin-left: 40%;
-    // left: 40%;
     cursor: pointer;
     }
     
     &__logo {
         width: 56.6rem;
+        @include respond(phone) {
+            width: 23.5rem
+        }
     }
 }
