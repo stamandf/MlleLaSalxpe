@@ -332,7 +332,8 @@ body {
         width: 23.5rem; } }
 
 .sticky .header__logo {
-  width: 18.86rem; }
+  width: 18.86rem;
+  height: 4.8rem; }
 
 .row {
   max-width: 114rem;
