@@ -10,7 +10,7 @@ $(document).ready(function () {
           $('.header__logo').remove('sticky');
         }
     }, {
-        offset: '60px'
+        offset: '100px'
     });
     
     //Scroll when click on links
