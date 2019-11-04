@@ -10,16 +10,16 @@ $(document).ready(function () {
           $('.header__logo').remove('sticky');
         }
     }, {
-        offset: '100px'
+        offset: '60px'
     });
     
     //Scroll when click on links
     $('js--scroll-to-product').click(function() {
-      $('html,body').animate({scrollTop: $('js--section-product').offset(),top}, 3000);
+      $('html,body').animate({scrollTop: $('js--section-product').offset().top}, 3000);
     });
 
     $('js--scroll-to-vision').click(function() {
-      $('html,body').animate({scrollTop: $('js--section-vision').offset(),top}, 3000);
+      $('html,body').animate({scrollTop: $('js--section-vision').offset().top}, 3000);
     });
 
     /* Navigation scroll */
@@ -65,30 +65,37 @@ $(document).ready(function () {
     $('.js--wp-1').waypoint(function(direction) {
         $('.js--wp-1').addClass('animated fadeIn');
     }, {
-        offset: '50%'
+        offset: '30%'
     });
 
     $('.js--wp-2').waypoint(function(direction) {
-        $('.js--wp-2').addClass('animated fadeInUp');
-    }, {
-        offset: '50%'
-    });
+      $('.js--wp-2').addClass('animated fadeIn');
+  }, {
+      offset: '10%'
+  });
 
-    $('.js--wp-3').waypoint(function(direction) {
-        $('.js--wp-3').addClass('animated fadeIn');
-    }, {
-        offset: '50%'
-    });
 
-    $('.js--wp-4').waypoint(function(direction) {
-        $('.js--wp-4').addClass('animated pulse');
-    }, {
-        offset: '50%'
-    });
+    // $('.js--wp-2').waypoint(function(direction) {
+    //     $('.js--wp-2').addClass('animated fadeInUp');
+    // }, {
+    //     offset: '50%'
+    // });
 
-    $('.js--wp-5').waypoint(function(direction) {
-        $('.js--wp-5').addClass('animated fadeInRight');
-    }, {
-        offset: '50%'
-    });
+    // $('.js--wp-3').waypoint(function(direction) {
+    //     $('.js--wp-3').addClass('animated fadeIn');
+    // }, {
+    //     offset: '50%'
+    // });
+
+    // $('.js--wp-4').waypoint(function(direction) {
+    //     $('.js--wp-4').addClass('animated pulse');
+    // }, {
+    //     offset: '50%'
+    // });
+
+    // $('.js--wp-5').waypoint(function(direction) {
+    //     $('.js--wp-5').addClass('animated fadeInRight');
+    // }, {
+    //     offset: '50%'
+    // });
 });

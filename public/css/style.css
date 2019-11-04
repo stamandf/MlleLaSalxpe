@@ -30,6 +30,24 @@ ORDER to do media queries: base + typography > general layout + grid > page layo
     opacity: 1;
     transform: translateY(-10px); } }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  transition: all ease-in-out; }
+
 *,
 *::after,
 *::before {
@@ -309,8 +327,18 @@ body {
   .swatch--color-dpn7 {
     background-color: #381A16; }
 
-.section-product {
+section {
   padding-top: 5rem; }
+
+.js--wp-1 {
+  opacity: 0; }
+  .js--wp-1.animated {
+    opacity: 1; }
+
+.js--wp-2 {
+  opacity: 0; }
+  .js--wp-2.animated {
+    opacity: 1; }
 
 .section-banner__box {
   height: 70vh;
