@@ -352,18 +352,25 @@ section {
       padding: 0ex; } }
 
 .header {
+  display: block;
   position: relative;
   top: 0%;
   text-align: center;
   cursor: pointer; }
   .header__logo {
     width: 56.6rem; }
-    @media only screen and (max-width: 37.5em) {
-      .header__logo {
-        width: 23.5rem; } }
-    @media only screen and (max-width: 75em) {
-      .header__logo {
-        width: 46.6rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .header__logo {
+    float: left;
+    width: 18.86rem;
+    height: 4.8rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  .header__logo {
+    float: left;
+    width: 28.3rem;
+    height: 6.8rem; } }
 
 .sticky .header__logo {
   width: 18.86rem;
@@ -417,9 +424,9 @@ section {
   @media only screen and (max-width: 37.5em) {
     .navigation {
       width: 100%; } }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
     .navigation {
-      padding: 2rem 5%; } }
+      width: 100%; } }
   .navigation__list {
     text-align: center;
     list-style: none;
@@ -428,15 +435,32 @@ section {
     @media only screen and (max-width: 37.5em) {
       .navigation__list {
         text-align: right; } }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__list {
+        text-align: right; } }
     @media only screen and (max-width: 75em) {
       .navigation__list {
-        font-size: 1.5rem; } }
+        text-align: right; } }
   .navigation__item {
     display: inline-block;
     padding: 0 5rem 0 0; }
     .navigation__item:last-child {
       padding: 0; }
     @media only screen and (max-width: 37.5em) {
+      .navigation__item {
+        display: block;
+        line-height: 2.8rem;
+        border-bottom: thin solid #999; }
+        .navigation__item:last-child {
+          padding: 0 5rem 0 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .navigation__item {
+        display: block;
+        line-height: 2.8rem;
+        border-bottom: thin solid #999; }
+        .navigation__item:last-child {
+          padding: 0 5rem 0 0; } }
+    @media only screen and (max-width: 75em) {
       .navigation__item {
         display: block;
         line-height: 2.8rem;
@@ -476,6 +500,12 @@ section {
   cursor: pointer;
   display: none; }
   @media only screen and (max-width: 37.5em) {
+    .mobile-nav-icon {
+      display: inline-block; } }
+  @media only screen and (max-width: 56.25em) {
+    .mobile-nav-icon {
+      display: inline-block; } }
+  @media only screen and (max-width: 75em) {
     .mobile-nav-icon {
       display: inline-block; } }
 

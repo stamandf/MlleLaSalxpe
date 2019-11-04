@@ -7,10 +7,20 @@
 
     @include respond(phone) {
         width: 100%;
+        // &__nav {
+        //     display: none;
+        // }
     }
-    @include respond(tab-land) {
-        padding: 2rem 5%;
+    @include respond(tab-port) {
+        width: 100%;
+        // &__nav {
+        //     display: none;
+        // }
+
     }
+    // @include respond(tab-land) {
+    //     padding: 2rem 5%;
+    // }
     
     &__list {
         text-align: center;
@@ -21,8 +31,11 @@
         @include respond(phone) {
             text-align: right;
         }
+        @include respond(tab-port) {
+            text-align: right;
+        }
         @include respond(tab-land) {
-            font-size:1.5rem;
+            text-align: right;
         }
     }
     &__item {
@@ -32,6 +45,24 @@
             padding: 0;
         }
         @include respond(phone) {
+            display: block;  // Menu items are stacked one on top of the other
+            line-height: 2.8rem;
+            border-bottom: thin solid $color-grey-dark-2;
+            &:last-child {
+            padding: 0 5rem 0 0;
+            }   
+        }
+
+        @include respond(tab-port) {
+            display: block;  // Menu items are stacked one on top of the other
+            line-height: 2.8rem;
+            border-bottom: thin solid $color-grey-dark-2;
+            &:last-child {
+            padding: 0 5rem 0 0;
+            }   
+        }
+
+        @include respond(tab-land) {
             display: block;  // Menu items are stacked one on top of the other
             line-height: 2.8rem;
             border-bottom: thin solid $color-grey-dark-2;
@@ -94,9 +125,12 @@
     @include respond(phone) { //"Burger" menu icon should appear only for phone and tablet portrait screen
         display: inline-block;
     }
-    // @include respond(tab-port) {
-    //     opacity: 1;
-    // }
+    @include respond(tab-port) { //"Burger" menu icon should appear only for phone and tablet portrait screen
+        display: inline-block;
+    }
+    @include respond(tab-land) { //"Burger" menu icon should appear only for phone and tablet portrait screen
+        display: inline-block;
+    }
 }
 
 ion-icon {
