@@ -56,7 +56,6 @@ ORDER to do media queries: base + typography > general layout + grid > page layo
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
@@ -352,7 +351,6 @@ section {
       padding: 0ex; } }
 
 .header {
-  display: block;
   position: relative;
   top: 0%;
   text-align: center;
@@ -360,16 +358,24 @@ section {
   .header__logo {
     width: 56.6rem; }
 
+@media only screen and (max-width: 25em) {
+  .header__logo {
+    width: 12.57rem;
+    height: 1.8rem; } }
+
 @media only screen and (max-width: 37.5em) {
   .header__logo {
-    float: left;
-    width: 18.86rem;
-    height: 4.8rem; } }
+    width: 18.8rem;
+    height: 2.7rem; } }
 
 @media only screen and (max-width: 56.25em) {
   .header__logo {
-    float: left;
     width: 28.3rem;
+    height: 4.1rem; } }
+
+@media only screen and (max-width: 75em) {
+  .header__logo {
+    width: 46.6rem;
     height: 6.8rem; } }
 
 .sticky .header__logo {
@@ -423,9 +429,15 @@ section {
   padding: 3rem 10%; }
   @media only screen and (max-width: 37.5em) {
     .navigation {
+      padding: 1rem 5%;
       width: 100%; } }
   @media only screen and (max-width: 56.25em) {
     .navigation {
+      padding: 1rem 10%;
+      width: 100%; } }
+  @media only screen and (max-width: 75em) {
+    .navigation {
+      padding: 1rem 10%;
       width: 100%; } }
   .navigation__list {
     text-align: center;
@@ -493,10 +505,22 @@ section {
       padding-left: 5rem; }
   @media only screen and (max-width: 37.5em) {
     .sticky .navigation {
-      padding: 1rem 5%; } }
+      padding: 1rem 5%;
+      width: 100%; } }
+  @media only screen and (max-width: 56.25em) {
+    .sticky .navigation {
+      padding: 1rem 10%;
+      width: 100%; } }
+  @media only screen and (max-width: 75em) {
+    .sticky .navigation {
+      padding: 1rem 10%;
+      width: 100%; } }
 
 .mobile-nav-icon {
-  float: right;
+  position: absolute;
+  padding: 2rem;
+  top: 0;
+  right: 0;
   cursor: pointer;
   display: none; }
   @media only screen and (max-width: 37.5em) {

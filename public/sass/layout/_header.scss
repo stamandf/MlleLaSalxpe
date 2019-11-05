@@ -1,34 +1,40 @@
 .header {
-        display: block;
+        // display: block;
         position: relative;
         top: 0%;
         text-align: center;
         cursor: pointer;
-        // @include respond(phone) {
-        //     display: flex;
-        //     max-width: 5.5rem;
-        // }
+       
     
     &__logo {
         width: 56.6rem;
     }
 }
 .header__logo {
+
+    @include respond(small-phone) {
+        width: 12.57rem;
+        height: 1.8rem;
+    }
+
     @include respond(phone) {
-        float: left;
-        width: 18.86rem;
-        height: 4.8rem;
+        width: 18.8rem;
+        height: 2.7rem;
     }
     @include respond(tab-port) {
-        float: left;
         width: 28.3rem;
-        height: 6.8rem;
+        height: 4.1rem;
     }
     // @include respond(tab-land) {
-    //     float: left;
-    //     width: 46.6rem;
-    //     height: 6.8rem;
+    //     // float: left;
+    //     width: 28.3rem;
+    //     height: 4.1rem;
     // }
+    @include respond(tab-land) {
+        // float: left;
+        width: 46.6rem;
+        height: 6.8rem;
+    }
 }
 .sticky .header__logo {
         width: 18.86rem;
