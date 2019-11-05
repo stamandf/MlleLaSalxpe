@@ -355,32 +355,29 @@ section {
   top: 0%;
   text-align: center;
   cursor: pointer; }
-  .header__logo {
-    width: 56.6rem; }
 
-@media only screen and (max-width: 25em) {
-  .header__logo {
-    width: 12.57rem;
-    height: 1.8rem; } }
-
-@media only screen and (max-width: 37.5em) {
-  .header__logo {
-    width: 18.8rem;
-    height: 2.7rem; } }
-
-@media only screen and (max-width: 56.25em) {
-  .header__logo {
-    width: 28.3rem;
-    height: 4.1rem; } }
-
-@media only screen and (max-width: 75em) {
-  .header__logo {
-    width: 46.6rem;
-    height: 6.8rem; } }
+.header__logo {
+  width: 56.6rem; }
+  @media only screen and (max-width: 75em) {
+    .header__logo {
+      width: 46.6rem;
+      height: 6.8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .header__logo {
+      width: 28.3rem;
+      height: 4.1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .header__logo {
+      width: 18.8rem;
+      height: 2.7rem; } }
+  @media only screen and (max-width: 25em) {
+    .header__logo {
+      width: 12.57rem;
+      height: 1.8rem; } }
 
 .sticky .header__logo {
-  width: 18.86rem;
-  height: 4.8rem; }
+  width: 18.8rem;
+  height: 2.7rem; }
 
 .row {
   max-width: 114rem;

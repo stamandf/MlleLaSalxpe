@@ -4,40 +4,34 @@
         top: 0%;
         text-align: center;
         cursor: pointer;
-       
-    
-    &__logo {
-        width: 56.6rem;
-    }
 }
-.header__logo {
 
-    @include respond(small-phone) {
-        width: 12.57rem;
-        height: 1.8rem;
+.header__logo {
+    width: 56.6rem;
+
+    @include respond(tab-land) {
+        width: 46.6rem;
+        height: 6.8rem;
+    }
+    @include respond(tab-port) {
+        width: 28.3rem;
+        height: 4.1rem;
     }
 
     @include respond(phone) {
         width: 18.8rem;
         height: 2.7rem;
     }
-    @include respond(tab-port) {
-        width: 28.3rem;
-        height: 4.1rem;
+
+    @include respond(small-phone) {
+        width: 12.57rem;
+        height: 1.8rem;
     }
-    // @include respond(tab-land) {
-    //     // float: left;
-    //     width: 28.3rem;
-    //     height: 4.1rem;
-    // }
-    @include respond(tab-land) {
-        // float: left;
-        width: 46.6rem;
-        height: 6.8rem;
-    }
+
+ 
 }
 .sticky .header__logo {
-        width: 18.86rem;
-        height: 4.8rem;
+        width: 18.8rem;
+        height: 2.7rem;
         
 }
