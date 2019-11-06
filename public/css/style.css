@@ -357,7 +357,8 @@ section {
   cursor: pointer; }
 
 .header__logo {
-  width: 56.6rem; }
+  width: 56.6rem;
+  margin-top: 1rem; }
   @media only screen and (max-width: 75em) {
     .header__logo {
       width: 46.6rem;
@@ -376,6 +377,7 @@ section {
       height: 1.8rem; } }
 
 .sticky .header__logo {
+  margin-top: 1rem;
   width: 18.8rem;
   height: 2.7rem; }
 
@@ -427,15 +429,21 @@ section {
   @media only screen and (max-width: 37.5em) {
     .navigation {
       padding: 1rem 5%;
-      width: 100%; } }
+      width: 100%; }
+      .navigation__nav {
+        display: none; } }
   @media only screen and (max-width: 56.25em) {
     .navigation {
       padding: 1rem 10%;
-      width: 100%; } }
+      width: 100%; }
+      .navigation__nav {
+        display: none; } }
   @media only screen and (max-width: 75em) {
     .navigation {
       padding: 1rem 10%;
-      width: 100%; } }
+      width: 100%; }
+      .navigation__nav {
+        display: none; } }
   .navigation__list {
     text-align: center;
     list-style: none;

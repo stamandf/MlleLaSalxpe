@@ -8,7 +8,7 @@
 
 .header__logo {
     width: 56.6rem;
-
+    margin-top: 1rem;
     @include respond(tab-land) {
         width: 46.6rem;
         height: 6.8rem;
@@ -31,6 +31,7 @@
  
 }
 .sticky .header__logo {
+        margin-top: 1rem;
         width: 18.8rem;
         height: 2.7rem;
         

@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     /* For the sticky navigation */
     $('.js--section-product').waypoint(function(direction) {
         if (direction == "down") {
@@ -74,28 +73,28 @@ $(document).ready(function () {
       offset: '10%'
   });
 
+  /* Mobile navigation */
+  $('.js--nav-icon').click(function() {
+    let nav = $('.js--navigation__nav');
+    let icon = $('.js--nav-icon ion-icon');
+    // console.log("icon name=", icon.attr("name"));
+    // let checkName = icon.attr("name") === "close";
+    // console.log("checkName=", checkName);
+    // icon.attr("name", "close");
+    // console.log("icon name2=", icon.attr("name"));
+    // let icon = $('name[menu]');
+    nav.slideToggle(200); //slideToggle is a jQuery method to open/close a box
 
-    // $('.js--wp-2').waypoint(function(direction) {
-    //     $('.js--wp-2').addClass('animated fadeInUp');
-    // }, {
-    //     offset: '50%'
-    // });
+    if (icon.attr("name") === "menu") { //if it's the "menu" icon 
+      icon.attr("name", "close")  //then replace with "close" icon 
+      // console.log("Menu icon replaced!")
+      // console.log("NOW icon name=", icon.attr("name"));
+    } else {  //Menu is opened need to be closed
+      icon.attr("name", "menu")    //replace "close" icon with "menu" icon
+      // console.log("Menu icon brought back to menu!")
+      // console.log("NOW icon name=", icon.attr("name"));
+    }
+      
+  });
 
-    // $('.js--wp-3').waypoint(function(direction) {
-    //     $('.js--wp-3').addClass('animated fadeIn');
-    // }, {
-    //     offset: '50%'
-    // });
-
-    // $('.js--wp-4').waypoint(function(direction) {
-    //     $('.js--wp-4').addClass('animated pulse');
-    // }, {
-    //     offset: '50%'
-    // });
-
-    // $('.js--wp-5').waypoint(function(direction) {
-    //     $('.js--wp-5').addClass('animated fadeInRight');
-    // }, {
-    //     offset: '50%'
-    // });
 });

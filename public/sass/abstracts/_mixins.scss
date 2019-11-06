@@ -35,7 +35,7 @@ ORDER to do media queries: base + typography > general layout + grid > page layo
 */
 @mixin respond($breakpoint) {
     @if $breakpoint == small-phone {
-        @media only screen and (max-width:25em) { @content }; //max-width:600px => 400/16 = 25
+        @media only screen and (max-width:25em) { @content }; //max-width:400px => 400/16 = 25
     }
     @if $breakpoint == phone {
         @media only screen and (max-width:37.5em) { @content }; //max-width:600px => 600/16 = 37.5
