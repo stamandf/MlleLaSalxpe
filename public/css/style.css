@@ -177,9 +177,23 @@ body {
   background-color: #382616;
   color: #faf0e9;
   font-size: 1.4rem;
-  padding: 10rem;
-  margin-top: 7rem;
-  height: 35vh; }
+  padding: 10rem 0; }
+  @media only screen and (max-width: 75em) {
+    .footer {
+      padding: 8rem 0; }
+      .footer .row .col-1-of-3:not(:last-child) {
+        margin-bottom: 3rem !important; } }
+  @media only screen and (max-width: 56.25em) {
+    .footer {
+      padding: 6rem 0; }
+      .footer .row .col-1-of-3:not(:last-child) {
+        margin-bottom: 3rem !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .footer .row .col-1-of-3:not(:last-child) {
+      margin-bottom: 3rem !important; } }
+  @media only screen and (max-width: 25em) {
+    .footer .row .col-1-of-3:not(:last-child) {
+      margin-bottom: 3rem !important; } }
   .footer__navigation {
     display: block; }
   .footer__list {

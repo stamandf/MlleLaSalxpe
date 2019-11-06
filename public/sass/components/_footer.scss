@@ -2,11 +2,39 @@
     background-color: $color-primary-dark4;
     color: $color-primary-light4;
     font-size: $small-font-size;
-    padding: 10rem;
-    // padding-top: 4rem;
-    // padding-bottom: 6rem;
-    margin-top: 7rem;
-    height: 35vh;
+    padding: 10rem 0;
+
+    @include respond(tab-land) {
+        padding: 8rem 0;
+
+        .row .col-1-of-3:not(:last-child) { 
+            margin-bottom: 3rem !important; 
+            
+        }
+    }
+
+    @include respond(tab-port) {
+        padding: 6rem 0;
+        
+        .row .col-1-of-3:not(:last-child) { 
+            margin-bottom: 3rem !important; 
+            
+        }
+    }
+    @include respond(phone) {
+        
+        .row .col-1-of-3:not(:last-child) { 
+            margin-bottom: 3rem !important; 
+            
+        }
+    }
+    @include respond(small-phone) {
+        
+        .row .col-1-of-3:not(:last-child) { 
+            margin-bottom: 3rem !important; 
+            
+        }
+    }
 
     &__navigation {
         display: block;
