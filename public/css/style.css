@@ -248,6 +248,7 @@ body {
     background-color: #382616;
     padding: 1.3rem;
     margin-top: 1rem;
+    border: 2px solid #faf0e9;
     border-radius: 4px;
     width: 13rem;
     outline: none;
