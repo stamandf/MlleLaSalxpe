@@ -29,6 +29,14 @@ $(document).ready(function () {
         .not('[href="#"]')
         .not('[href="#0"]')
         .click(function(event) {
+          let nav = $('.js--navigation__nav');
+          let icon = $('.js--nav-icon ion-icon');
+          console.log('TRACE: Scrolling navigation!'); //TRACE
+          console.log("TRACE: icon name=", icon.attr("name")); //TRACE
+          if (icon.attr("name") === "close") { //if on mobile view, menu is open and must be closed
+              nav.slideToggle(200); //when a link is clicked on mobile close menu
+              icon.attr("name", "menu")  //then replace with "close" icon 
+            } 
           // On-page links
           if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
