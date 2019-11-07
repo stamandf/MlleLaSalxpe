@@ -48,7 +48,52 @@
             transform: translateY(4px);
         }
     }
-    
-       
-    
 }
+
+.clear .button {
+        font-size: $default-font-size !important;
+        font-family: inherit !important;
+        // text-align: center;
+        color: $color-primary-light5 !important;
+        background-color: $color-primary-dark4 !important;
+        padding: 1.3rem !important;
+        margin-top: 1rem !important;
+        border: 2px solid $color-primary-light4 !important;
+        border-radius: 4px !important;
+        width: 13rem !important;
+        height: 5rem !important;
+        line-height: 0 !important;
+        // outline: none !important;
+        transition: all .5s !important;
+
+        &:hover {
+            background-color: $color-primary-light4 !important;
+            color: $color-primary-dark2 !important;
+            cursor: pointer !important;
+        }
+        &:active {
+            box-shadow: 0 .5rem 1rem rgba($color-black, .15) !important;
+            transform: translateY(4px) !important;
+        }
+
+    }
+
+.mc-field-group .form__input {
+        font-family: inherit !important;
+        color: $color-primary-light5 !important;
+        outline: none !important;
+        background-color: $color-primary-dark4 !important;
+        font-size: $small-font-size !important;
+        padding: 1rem 2rem 1rem 0 !important;
+        width: 100% !important;
+        border: none !important;
+        border-bottom: 2px solid $color-primary-light4 !important;
+        &::placeholder{
+            color: $color-primary-light5 !important;
+        }
+        &:focus:invalid {
+            border-bottom: 2px solid #b30000 !important;
+        }
+}
+
+

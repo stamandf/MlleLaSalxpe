@@ -140,6 +140,11 @@ body {
   text-align: justify;
   margin-bottom: 3rem; }
 
+.paragraph-footer {
+  font-size: 1.6rem;
+  text-align: justify;
+  margin-bottom: 3rem; }
+
 .heading-footer {
   font-size: 1.5rem;
   font-weight: 400;
@@ -172,6 +177,9 @@ body {
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+
+.u-disappear {
+  display: none !important; }
 
 .footer {
   background-color: #382616;
@@ -260,6 +268,42 @@ body {
     .form__button:active {
       box-shadow: 0 0.5rem 1rem rgba(27, 27, 27, 0.15);
       transform: translateY(4px); }
+
+.clear .button {
+  font-size: 1.6rem !important;
+  font-family: inherit !important;
+  color: #bababa !important;
+  background-color: #382616 !important;
+  padding: 1.3rem !important;
+  margin-top: 1rem !important;
+  border: 2px solid #faf0e9 !important;
+  border-radius: 4px !important;
+  width: 13rem !important;
+  height: 5rem !important;
+  line-height: 0 !important;
+  transition: all .5s !important; }
+  .clear .button:hover {
+    background-color: #faf0e9 !important;
+    color: #481a0f !important;
+    cursor: pointer !important; }
+  .clear .button:active {
+    box-shadow: 0 0.5rem 1rem rgba(27, 27, 27, 0.15) !important;
+    transform: translateY(4px) !important; }
+
+.mc-field-group .form__input {
+  font-family: inherit !important;
+  color: #bababa !important;
+  outline: none !important;
+  background-color: #382616 !important;
+  font-size: 1.4rem !important;
+  padding: 1rem 2rem 1rem 0 !important;
+  width: 100% !important;
+  border: none !important;
+  border-bottom: 2px solid #faf0e9 !important; }
+  .mc-field-group .form__input::placeholder {
+    color: #bababa !important; }
+  .mc-field-group .form__input:focus:invalid {
+    border-bottom: 2px solid #b30000 !important; }
 
 .swatches {
   background-color: inherit;

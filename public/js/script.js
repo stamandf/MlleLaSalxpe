@@ -104,5 +104,28 @@ $(document).ready(function () {
     }
       
   });
+  /* Form Input values handler */
+  let inputEmail = $('.js--input-email');
+  let inputName1 = $('.js--input-name1');
+  let inputName2 = $('.js--input-name2');
+  let clearSubscribe = $('.js--clear-subscribe');
+  console.log('inputEmail=', inputEmail);
+  
+  inputEmail.focus(function() { //When focus is on the email field the rest of form appears.
+    inputName1.removeClass('u-disappear');
+    inputName2.removeClass('u-disappear');
+    clearSubscribe.removeClass('u-disappear');
+  });
+  /* Form handler */
+  $('form').submit(function(event){
+    let inputValue = $("input[name=FNAME]").val();
+    console.log("inputValue = ", inputValue);
+    event.preventDefault();
+    let form = $('.form');
+    let formParagraph = $('.paragraph-footer')
+    form.addClass('u-disappear');
+    formParagraph.removeClass('u-disappear');
+    formParagraph.append('Thank you, ', inputValue, '.  You have been subscribed!');
+  });
 
 });
