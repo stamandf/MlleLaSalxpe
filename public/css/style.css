@@ -78,7 +78,7 @@ body {
       box-sizing: content-box; } }
 
 ::selection {
-  background-color: #c06a2b;
+  background-color: #d19e33;
   color: #fff; }
 
 body {
@@ -403,6 +403,9 @@ body {
 section {
   padding-top: 5rem; }
 
+.section-shades {
+  margin-bottom: 10rem; }
+
 .js--wp-1 {
   opacity: 0; }
   .js--wp-1.animated {
@@ -607,6 +610,8 @@ section {
   top: 0;
   left: 0;
   width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   background-color: #ffffff;
   box-shadow: 0 0.2rem 1rem #999;
   padding: 1rem 1%;
