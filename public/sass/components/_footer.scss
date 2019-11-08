@@ -66,6 +66,17 @@
     &__contact{
         color: $color-primary-light5;
         line-height: 5rem;
+
+        &:link,
+        &:visited {
+            color: $color-primary-light5;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary-light4;
+        }
     }
     &__icon {
         font-size: 4rem;
@@ -74,6 +85,17 @@
         position: relative;
         top: 1.5rem;
         padding-right: 1rem;
+
+        &:link,
+        &:visited {
+            color: $color-primary-light5;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary-light4;
+        }
     }
     
 

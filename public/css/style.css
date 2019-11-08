@@ -219,6 +219,11 @@ body {
   .footer__contact {
     color: #bababa;
     line-height: 5rem; }
+    .footer__contact:link, .footer__contact:visited {
+      color: #bababa;
+      text-decoration: none; }
+    .footer__contact:hover, .footer__contact:active {
+      color: #faf0e9; }
   .footer__icon {
     font-size: 4rem;
     color: #bababa;
@@ -226,6 +231,14 @@ body {
     position: relative;
     top: 1.5rem;
     padding-right: 1rem; }
+    .footer__icon:link, .footer__icon:visited {
+      color: #bababa;
+      text-decoration: none; }
+    .footer__icon:hover, .footer__icon:active {
+      color: #faf0e9; }
+
+#mc_embed_signup .form {
+  padding: 0 !important; }
 
 .form {
   margin-top: 1rem;
