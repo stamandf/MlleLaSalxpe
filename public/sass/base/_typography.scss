@@ -72,7 +72,13 @@ body {
     font-size: $default-font-size;
     text-align: justify;
     margin-bottom: 3rem;
+
+    &__copyright {
+        margin-bottom: 0;
+    }
+
 }
+
 .heading-footer {
     font-size: 1.5rem;
     font-weight: 400;
