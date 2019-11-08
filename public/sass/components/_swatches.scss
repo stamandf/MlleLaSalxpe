@@ -1,6 +1,6 @@
 .swatches {
     background-color:inherit;
-    padding: 1rem;
+    padding: 1rem; 
     width: 100%;
     max-width: 100%;
     display: flex;
@@ -10,8 +10,10 @@
 }
 .swatch {
     // background-color: #d19e33;
-    height: 2.8rem;
-    width: 2.8rem;
+    // height: 2.8rem; 
+    // width: 2.8rem;
+    height: 3.2rem;
+    width: 3.2rem;
     padding: 1rem;
     margin: 1rem;
     border-radius: 50%;
