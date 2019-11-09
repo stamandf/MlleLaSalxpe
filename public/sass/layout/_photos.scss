@@ -3,9 +3,24 @@
     &__img {
         max-width: 30rem;
         height: auto;
+        
         @include respond(phone) {
             height: 30rem;
             width: 30rem;
+        }
+        // @include respond(tab-land) {
+        //     height: auto;
+        //     width: 100%;
+        // }
+
+        // @include respond(tab-port) {
+        //     height: auto;
+        //     width: 100%;
+        // }
+
+        // @include respond(phone) {
+        //     height: auto;
+        //     width: 100%;
         }
     
     }
