@@ -8,22 +8,11 @@
 @import "base/typography";
 @import "base/utilities";
 
-// @import "pages/home";
-
-// @import "components/button";
-// @import "components/composition";
-// @import "components/feature-box";
-// @import "components/card";
-// @import "components/story";
-// @import "components/bg-video";
-// @import "components/form";
 @import "components/footer";
 @import "components/form";
 @import "components/swatches";
 @import "components/sections";
 @import "components/tooltip";
-
-// @import "components/popup";
 
 @import "layout/banner";
 @import "layout/header";
@@ -36,12 +25,14 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 html {
     //This describes what 1rem is
     font-size: 62.5%; //Definition of 1rem = 62.5% * 16px;
 }
 body {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }

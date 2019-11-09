@@ -4,12 +4,21 @@
 
 .form {
     margin-top:1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     background-color: $color-primary-dark4;
     color: $color-primary-light5;
+    text-decoration: none;
     
     
     &__input {
@@ -22,6 +31,15 @@
         width: 100%;
         border: none;
         border-bottom: 2px solid $color-primary-light4;
+        &::-webkit-input-placeholder{
+            color: $color-primary-light5;
+        }
+        &:-ms-input-placeholder{
+            color: $color-primary-light5;
+        }
+        &::-ms-input-placeholder{
+            color: $color-primary-light5;
+        }
         &::placeholder{
             color: $color-primary-light5;
         }
@@ -41,7 +59,9 @@
         border-radius: 4px;
         width: 13rem;
         outline: none;
+        -webkit-transition: all .5s;
         transition: all .5s;
+        text-decoration: none !important;   
 
         &:hover {
             background-color: $color-primary-light4;
@@ -49,8 +69,10 @@
             cursor: pointer;
         }
         &:active {
-            box-shadow: 0 .5rem 1rem rgba($color-black, .15);
-            transform: translateY(4px);
+            -webkit-box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+                    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+            -webkit-transform: translateY(4px);
+                    transform: translateY(4px);
         }
     }
 }
@@ -69,6 +91,7 @@
         height: 5rem !important;
         line-height: 0 !important;
         // outline: none !important;
+        -webkit-transition: all .5s !important;
         transition: all .5s !important;
 
         &:hover {
@@ -77,8 +100,10 @@
             cursor: pointer !important;
         }
         &:active {
-            box-shadow: 0 .5rem 1rem rgba($color-black, .15) !important;
-            transform: translateY(4px) !important;
+            -webkit-box-shadow: 0 .5rem 1rem rgba($color-black, .15) !important;
+                    box-shadow: 0 .5rem 1rem rgba($color-black, .15) !important;
+            -webkit-transform: translateY(4px) !important;
+                    transform: translateY(4px) !important;
         }
 
     }
@@ -93,6 +118,15 @@
         width: 100% !important;
         border: none !important;
         border-bottom: 2px solid $color-primary-light4 !important;
+        &::-webkit-input-placeholder{
+            color: $color-primary-light5 !important;
+        }
+        &:-ms-input-placeholder{
+            color: $color-primary-light5 !important;
+        }
+        &::-ms-input-placeholder{
+            color: $color-primary-light5 !important;
+        }
         &::placeholder{
             color: $color-primary-light5 !important;
         }
@@ -100,5 +134,4 @@
             border-bottom: 2px solid #b30000 !important;
         }
 }
-
 

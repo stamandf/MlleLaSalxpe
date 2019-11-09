@@ -1,8 +1,12 @@
 // Main nativation
 .navigation {
     height: auto;
-    justify-content: space-between; //display left right to the end and then middle evenly spaced between
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; //display left right to the end and then middle evenly spaced between
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 3rem 10%;
 
     @include respond(phone) {
@@ -82,6 +86,7 @@
         &:link,
         &:visited {
             text-decoration: none;
+            -webkit-transition: all 0.3s ease 0s;
             transition: all 0.3s ease 0s;
             color: $color-black;
         }
@@ -95,15 +100,21 @@
 
 // Sticky navigation 
 .sticky {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    flex-wrap: nowrap;
-    justify-content: space-between; //display left right to the end and then middle evenly spaced between
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; //display left right to the end and then middle evenly spaced between
     background-color: #ffffff;
-    box-shadow: 0 .2rem 1rem $color-grey-dark-2;
+    -webkit-box-shadow: 0 .2rem 1rem $color-grey-dark-2;
+            box-shadow: 0 .2rem 1rem $color-grey-dark-2;
     padding: 1rem 1%;
     z-index: 9999;
     

@@ -1,5 +1,7 @@
 .photo {
-    justify-content: right;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
     &__img {
         max-width: 30rem;
         height: auto;
@@ -8,23 +10,6 @@
             height: 30rem;
             width: 30rem;
         }
-        // @include respond(tab-land) {
-        //     height: auto;
-        //     width: 100%;
-        // }
-
-        // @include respond(tab-port) {
-        //     height: auto;
-        //     width: 100%;
-        // }
-
-        // @include respond(phone) {
-        //     height: auto;
-        //     width: 100%;
-        }
-    
     }
-    
-    
-    
 }
+ 

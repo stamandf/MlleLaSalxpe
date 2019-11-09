@@ -10,14 +10,23 @@ body {
     text-align: center;
     font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;;
+    letter-spacing: 3.5rem;
     padding-top: 5%;
 
-    @include respond(phone) {
-        letter-spacing: 1rem;
+    @include respond(port-land) {
+        letter-spacing: 3rem;
         font-size: 5rem;
     }
+    @include respond(port-land) {
+        letter-spacing: 2rem;
+        font-size: 4rem;
+    }
+    @include respond(phone) {
+        letter-spacing: 1rem;
+        font-size: 3rem;
+    }
 }
+
 .heading__text-box {
     text-align: center;
 }

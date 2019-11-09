@@ -53,6 +53,7 @@ ORDER to do media queries: base + typography > general layout + grid > page layo
 *::before {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
 html {
@@ -68,6 +69,7 @@ html {
       font-size: 75%; } }
 
 body {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 3rem; }
   @media only screen and (max-width: 37.5em) {
@@ -75,6 +77,7 @@ body {
       padding: 0;
       width: 100%;
       margin: 0;
+      -webkit-box-sizing: content-box;
       box-sizing: content-box; } }
 
 ::selection {
@@ -97,7 +100,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       letter-spacing: 1rem;
-      font-size: 5rem; } }
+      font-size: 3rem; } }
 
 .heading__text-box {
   text-align: center; }
@@ -244,12 +247,21 @@ body {
 
 .form {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   background-color: #382616;
-  color: #bababa; }
+  color: #bababa;
+  text-decoration: none; }
   .form__input {
     font-family: inherit;
     color: #bababa;
@@ -260,6 +272,12 @@ body {
     width: 100%;
     border: none;
     border-bottom: 2px solid #faf0e9; }
+    .form__input::-webkit-input-placeholder {
+      color: #bababa; }
+    .form__input:-ms-input-placeholder {
+      color: #bababa; }
+    .form__input::-ms-input-placeholder {
+      color: #bababa; }
     .form__input::placeholder {
       color: #bababa; }
     .form__input:focus:invalid {
@@ -275,13 +293,17 @@ body {
     border-radius: 4px;
     width: 13rem;
     outline: none;
-    transition: all .5s; }
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    text-decoration: none !important; }
     .form__button:hover {
       background-color: #faf0e9;
       color: #481a0f;
       cursor: pointer; }
     .form__button:active {
+      -webkit-box-shadow: 0 0.5rem 1rem rgba(27, 27, 27, 0.15);
       box-shadow: 0 0.5rem 1rem rgba(27, 27, 27, 0.15);
+      -webkit-transform: translateY(4px);
       transform: translateY(4px); }
 
 .clear .button {
@@ -296,13 +318,16 @@ body {
   width: 13rem !important;
   height: 5rem !important;
   line-height: 0 !important;
+  -webkit-transition: all .5s !important;
   transition: all .5s !important; }
   .clear .button:hover {
     background-color: #faf0e9 !important;
     color: #481a0f !important;
     cursor: pointer !important; }
   .clear .button:active {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(27, 27, 27, 0.15) !important;
     box-shadow: 0 0.5rem 1rem rgba(27, 27, 27, 0.15) !important;
+    -webkit-transform: translateY(4px) !important;
     transform: translateY(4px) !important; }
 
 .mc-field-group .form__input {
@@ -315,6 +340,12 @@ body {
   width: 100% !important;
   border: none !important;
   border-bottom: 2px solid #faf0e9 !important; }
+  .mc-field-group .form__input::-webkit-input-placeholder {
+    color: #bababa !important; }
+  .mc-field-group .form__input:-ms-input-placeholder {
+    color: #bababa !important; }
+  .mc-field-group .form__input::-ms-input-placeholder {
+    color: #bababa !important; }
   .mc-field-group .form__input::placeholder {
     color: #bababa !important; }
   .mc-field-group .form__input:focus:invalid {
@@ -325,10 +356,17 @@ body {
   padding: 1rem;
   width: 100%;
   max-width: 100%;
-  max-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
 
 .swatch {
@@ -337,6 +375,7 @@ body {
   padding: 1rem;
   margin: 1rem;
   border-radius: 50%;
+  -webkit-transition: all .15s;
   transition: all .15s; }
   .swatch:hover {
     border: 3px solid #6a6a6a; }
@@ -437,6 +476,7 @@ section {
   left: 50%;
   margin-left: -60px;
   opacity: 0;
+  -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s; }
 
 .tooltip .tooltiptext::after {
@@ -455,6 +495,7 @@ section {
 
 .section-banner__box {
   height: 70vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 183, 0, 0.8)), color-stop(rgba(219, 178, 93, 0.8)), color-stop(rgba(160, 88, 36, 0.8)), color-stop(rgba(112, 62, 25, 0.8)), to(rgba(56, 26, 22, 0.8)));
   background-image: linear-gradient(rgba(255, 183, 0, 0.8), rgba(219, 178, 93, 0.8), rgba(160, 88, 36, 0.8), rgba(112, 62, 25, 0.8), rgba(56, 26, 22, 0.8));
   background-size: cover;
   background-position: left;
@@ -537,7 +578,11 @@ section {
 
 .navigation {
   height: auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 3rem 10%; }
   @media only screen and (max-width: 37.5em) {
@@ -600,20 +645,27 @@ section {
           padding: 0 5rem 0 0; } }
   .navigation__link:link, .navigation__link:visited {
     text-decoration: none;
+    -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     color: #1b1b1b; }
   .navigation__link:hover, .navigation__link:active {
     color: #d19e33; }
 
 .sticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 0.2rem 1rem #999;
   box-shadow: 0 0.2rem 1rem #999;
   padding: 1rem 1%;
   z-index: 9999; }
@@ -658,32 +710,28 @@ ion-icon {
   font-size: 3rem; }
 
 .photo {
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
   justify-content: right; }
   .photo__img {
     max-width: 30rem;
     height: auto; }
-    @media only screen and (max-width: 75em) {
-      .photo__img {
-        height: auto;
-        width: 100%; } }
-    @media only screen and (max-width: 56.25em) {
-      .photo__img {
-        height: auto;
-        width: 100%; } }
     @media only screen and (max-width: 37.5em) {
       .photo__img {
-        height: auto;
-        width: 100%; } }
+        height: 30rem;
+        width: 30rem; } }
 
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
 html {
   font-size: 62.5%; }
 
 body {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
