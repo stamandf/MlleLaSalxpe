@@ -31,8 +31,6 @@ $(document).ready(function () {
         .click(function(event) {
           let nav = $('.js--navigation__nav');
           let icon = $('.js--nav-icon ion-icon');
-          console.log('TRACE: Scrolling navigation!'); //TRACE
-          console.log("TRACE: icon name=", icon.attr("name")); //TRACE
           if (icon.attr("name") === "close") { //if on mobile view, menu is open and must be closed
               nav.slideToggle(200); //when a link is clicked on mobile close menu
               icon.attr("name", "menu")  //then replace with "close" icon 
@@ -85,22 +83,15 @@ $(document).ready(function () {
   $('.js--nav-icon').click(function() {
     let nav = $('.js--navigation__nav');
     let icon = $('.js--nav-icon ion-icon');
-    // console.log("icon name=", icon.attr("name"));
-    // let checkName = icon.attr("name") === "close";
-    // console.log("checkName=", checkName);
-    // icon.attr("name", "close");
-    // console.log("icon name2=", icon.attr("name"));
-    // let icon = $('name[menu]');
+    
     nav.slideToggle(200); //slideToggle is a jQuery method to open/close a box
 
     if (icon.attr("name") === "menu") { //if it's the "menu" icon 
       icon.attr("name", "close")  //then replace with "close" icon 
-      // console.log("Menu icon replaced!")
-      // console.log("NOW icon name=", icon.attr("name"));
+      
     } else {  //Menu is opened need to be closed
       icon.attr("name", "menu")    //replace "close" icon with "menu" icon
-      // console.log("Menu icon brought back to menu!")
-      // console.log("NOW icon name=", icon.attr("name"));
+      
     }
       
   });
@@ -109,7 +100,6 @@ $(document).ready(function () {
   let inputFirstName = $('.js--input-firstname');
   let inputLastName = $('.js--input-lastname');
   let clearSubscribe = $('.js--clear-subscribe');
-  console.log('inputEmail=', inputEmail);
   
   inputEmail.focus(function() { //When focus is on the email field the rest of form appears.
     inputFirstName.removeClass('u-disappear');
@@ -119,7 +109,6 @@ $(document).ready(function () {
   /* Form handler */
   $('form').submit(function(event){
     let inputValue = $("input[name=FNAME]").val();
-    console.log("inputValue = ", inputValue);
     event.preventDefault();
     let form = $('.form');
     let formParagraph = $('.paragraph-footer')

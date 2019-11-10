@@ -177,6 +177,9 @@ body {
 .u-margin-top-small {
   margin-top: 4rem !important; }
 
+.u-margin-top-medium {
+  margin-top: 5rem !important; }
+
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
@@ -503,7 +506,7 @@ section {
   @media only screen and (max-width: 37.5em) {
     .section-banner__box {
       width: 100%;
-      padding: 0ex; } }
+      padding: 0; } }
 
 .header {
   position: relative;
