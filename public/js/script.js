@@ -3,23 +3,25 @@ $(document).ready(function () {
     $('.js--section-product').waypoint(function(direction) {
         if (direction == "down") {
           $('header').addClass('sticky');
-          $('.header__logo').append('sticky');
+          // $('.header__logo').addClass('sticky');
+          // $('.header__logo').append('sticky');
         } else {
           $('header').removeClass('sticky');
-          $('.header__logo').remove('sticky');
+          // $('.header__logo').removeClass('sticky');
+          // $('.header__logo').remove('sticky');
         }
     }, {
-        offset: 60
+        offset: '30%'
     });
     
-    //Scroll when click on links
-    $('js--scroll-to-product').click(function() {
-      $('html,body').animate({scrollTop: $('js--section-product').offset().top}, 3000);
-    });
+    // //Scroll when click on links
+    // $('js--scroll-to-product').click(function() {
+    //   $('html,body').animate({scrollTop: $('js--section-product').offset().top}, 1000);
+    // });
 
-    $('js--scroll-to-vision').click(function() {
-      $('html,body').animate({scrollTop: $('js--section-vision').offset().top}, 3000);
-    });
+    // $('js--scroll-to-vision').click(function() {
+    //   $('html,body').animate({scrollTop: $('js--section-vision').offset().top}, 1000);
+    // });
 
     /* Navigation scroll */
     $(function() {
@@ -43,18 +45,23 @@ $(document).ready(function () {
           ) {
             // Figure out element to scroll to
             var target = $(this.hash);
+            console.log('location.hostname=', location.hostname); //TRACE
+            console.log('target1=', target); //TRACE
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            console.log('target2=', target); //TRACE
             // Does a scroll target exist?
             if (target.length) {
               // Only prevent default if animation is actually gonna happen
               event.preventDefault();
               $('html, body').animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top  //{scrollTop: targetOffset - 100} ?
               }, 1000, function() {
                 // Callback after animation
                 // Must change focus!
-                var $target = $(target);
+                var $target = $(target); //refers to the jQuery representation of the dom object
                 $target.focus();
+                console.log('$target=', $target); //TRACE
+                console.log('$target.is=', $target.is); //TRACE
                 if ($target.is(":focus")) { // Checking if the target was focused
                   return false;
                 } else {
