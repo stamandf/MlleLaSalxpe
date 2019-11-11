@@ -109,6 +109,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-transition: all 0.5s ease-in 0s;
+    transition: all 0.5s ease-in 0s;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: justify;
@@ -118,13 +120,18 @@
     -webkit-box-shadow: 0 .2rem 1rem $color-grey-dark-2;
             box-shadow: 0 .2rem 1rem $color-grey-dark-2;
     padding: 1rem 1%;
-    // -webkit-transform: translateZ(0);
-    //         transform: translateZ(0);
-    // z-index: 9999;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    z-index: 9999;
     
 }
 .sticky .navigation { //Replace sticky with stuck for new Waypoint version
     padding: 1rem 10%;
+    -webkit-transition: all 0.5s ease-in 0s;
+            transition: all 0.5s ease-in 0s;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    z-index: 9999;
     &__item {
         padding-top: .5rem;
         &:first-child {

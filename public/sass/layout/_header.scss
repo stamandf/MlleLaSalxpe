@@ -38,6 +38,8 @@
         margin-top: 1rem;
         width: 18.8rem;
         height: 2.7rem;
+        -webkit-transition: all 0.5s ease-in 0s;
+                transition: all 0.5s ease-in 0s;
         -webkit-transform: translateZ(0);
             transform: translateZ(0);
 }
