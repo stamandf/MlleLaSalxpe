@@ -3,11 +3,15 @@
         top: 0%;
         text-align: center;
         cursor: pointer;
+        -webkit-transform: translateZ(0);
+            transform: translateZ(0);
 }
 
 .header__logo {
     width: 56.6rem;
     margin-top: 1rem;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
     @include respond(tab-land) {
         width: 46.6rem;
         height: 6.8rem;
@@ -29,8 +33,11 @@
 
  
 }
+
 .sticky .header__logo {
         margin-top: 1rem;
         width: 18.8rem;
         height: 2.7rem;
+        -webkit-transform: translateZ(0);
+            transform: translateZ(0);
 }

@@ -5,13 +5,16 @@ body {
 }
 
 .heading-primary {
+    display: block;
+    position: relative;
+    margin-bottom: 5rem;
     color: $color-primary-light4;
     text-transform: uppercase;
     text-align: center;
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-    padding-top: 5%;
+    // padding-top: 5%;
 
     @include respond(port-land) {
         letter-spacing: 3rem;
