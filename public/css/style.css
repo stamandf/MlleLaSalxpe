@@ -521,15 +521,11 @@ section {
   position: relative;
   top: 0%;
   text-align: center;
-  cursor: pointer;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0); }
+  cursor: pointer; }
 
 .header__logo {
   width: 56.6rem;
-  margin-top: 1rem;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0); }
+  margin-top: 1rem; }
   @media only screen and (max-width: 75em) {
     .header__logo {
       width: 46.6rem;
@@ -555,6 +551,22 @@ section {
   transition: all 0.5s ease-in 0s;
   -webkit-transform: translateZ(0);
   transform: translateZ(0); }
+  @media only screen and (max-width: 75em) {
+    .sticky .header__logo {
+      width: 46.6rem;
+      height: 6.8rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .sticky .header__logo {
+      width: 33.96rem;
+      height: 4.92rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .sticky .header__logo {
+      width: 18.8rem;
+      height: 2.7rem; } }
+  @media only screen and (max-width: 25em) {
+    .sticky .header__logo {
+      width: 18.8rem;
+      height: 2.7rem; } }
 
 .row {
   max-width: 114rem;
@@ -675,30 +687,28 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100%;
-  -webkit-transition: all 0.5s ease-in 0s;
-  transition: all 0.5s ease-in 0s;
+  padding: 1rem 1%;
+  background-color: #ffffff;
+  -webkit-transition: all 0.5s ease-in 0.5s;
+  transition: all 0.5s ease-in 0.5s;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
-  background-color: #ffffff;
   -webkit-box-shadow: 0 0.2rem 1rem #999;
   box-shadow: 0 0.2rem 1rem #999;
-  padding: 1rem 1%;
   -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  z-index: 9999; }
+  transform: translateZ(0); }
 
 .sticky .navigation {
   padding: 1rem 10%;
-  -webkit-transition: all 0.5s ease-in 0s;
-  transition: all 0.5s ease-in 0s;
+  -webkit-transition: all 0.5s ease-in 0.5s;
+  transition: all 0.5s ease-in 0.5s;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   z-index: 9999; }
@@ -733,7 +743,7 @@ section {
   @media only screen and (max-width: 56.25em) {
     .mobile-nav-icon {
       display: inline-block;
-      padding: 1rem 2rem 0 2rem; } }
+      padding: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .mobile-nav-icon {
       display: inline-block; } }

@@ -3,15 +3,15 @@
         top: 0%;
         text-align: center;
         cursor: pointer;
-        -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+        // -webkit-transform: translateZ(0);
+        //     transform: translateZ(0);
 }
 
 .header__logo {
     width: 56.6rem;
     margin-top: 1rem;
-    -webkit-transform: translateZ(0);
-            transform: translateZ(0);
+    // -webkit-transform: translateZ(0);
+    //         transform: translateZ(0);
 
     @include respond(tab-land) {
         width: 46.6rem;
@@ -45,4 +45,21 @@
                 transition: all 0.5s ease-in 0s;
         -webkit-transform: translateZ(0);
             transform: translateZ(0);
+
+        @include respond(tab-land) {
+            width: 46.6rem;
+            height: 6.8rem;
+        }
+        @include respond(tab-port) {
+            width: 33.96rem;
+            height: 4.92rem;
+        }
+        @include respond(phone) {
+            width: 18.8rem;
+            height: 2.7rem;
+        }
+        @include respond(small-phone) {
+            width: 18.8rem; //maintain size of logo
+            height: 2.7rem;
+        }
 }
