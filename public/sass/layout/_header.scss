@@ -12,6 +12,7 @@
     margin-top: 1rem;
     -webkit-transform: translateZ(0);
             transform: translateZ(0);
+
     @include respond(tab-land) {
         width: 46.6rem;
         height: 6.8rem;
@@ -27,11 +28,9 @@
     }
 
     @include respond(small-phone) {
-        width: 12.57rem;
-        height: 1.8rem;
+        width: 18.8rem; //maintain size of logo
+        height: 2.7rem;
     }
-
- 
 }
 
 .sticky .header__logo {
