@@ -536,8 +536,8 @@ section {
       height: 6.8rem; } }
   @media only screen and (max-width: 56.25em) {
     .header__logo {
-      width: 28.3rem;
-      height: 4.1rem; } }
+      width: 33.96rem;
+      height: 4.92rem; } }
   @media only screen and (max-width: 37.5em) {
     .header__logo {
       width: 18.8rem;
@@ -721,23 +721,37 @@ section {
 
 .mobile-nav-icon {
   position: absolute;
-  padding: 2rem;
+  padding: 1rem 2rem 0 2rem;
   top: 0;
   right: 0;
   cursor: pointer;
   display: none; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 75em) {
     .mobile-nav-icon {
-      display: inline-block; } }
+      display: inline-block;
+      padding: 2rem 3rem 0 0; } }
   @media only screen and (max-width: 56.25em) {
     .mobile-nav-icon {
-      display: inline-block; } }
-  @media only screen and (max-width: 75em) {
+      display: inline-block;
+      padding: 1rem 2rem 0 2rem; } }
+  @media only screen and (max-width: 37.5em) {
     .mobile-nav-icon {
       display: inline-block; } }
 
 ion-icon {
   font-size: 3rem; }
+  @media only screen and (max-width: 75em) {
+    ion-icon {
+      font-size: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    ion-icon {
+      font-size: 6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    ion-icon {
+      font-size: 3rem; } }
+  @media only screen and (max-width: 25em) {
+    ion-icon {
+      font-size: 3rem; } }
 
 .photo {
   -webkit-box-pack: right;
