@@ -2,13 +2,14 @@ $(document).ready(function () {
     /* For the sticky navigation */
     $('.js--section-product').waypoint(function(direction) {
         if (direction == "down") {
-          $('header').addClass('sticky');
+          $('nav').addClass('sticky');
           
         } else {
-          $('header').removeClass('sticky');
+          $('nav').removeClass('sticky');
        }
     }, {
-        offset: '20%'
+        // offset: '20%'
+        offset: '60px;'
     });
  
     /* Navigation scroll */
@@ -19,8 +20,9 @@ $(document).ready(function () {
         .not('[href="#"]')
         .not('[href="#0"]')
         .click(function(event) {
-          let nav = $('.js--navigation__nav');
+          let nav = $('.js--navigation');
           let icon = $('.js--nav-icon ion-icon');
+          console.log('icon=', icon);
           if (icon.attr("name") === "close") { //if on mobile view, menu is open and must be closed
               nav.slideToggle(200); //when a link is clicked on mobile close menu
               icon.attr("name", "menu")  //then replace with "close" icon 
@@ -37,7 +39,6 @@ $(document).ready(function () {
             if (target.length) {
               // Only prevent default if animation is actually gonna happen
               event.preventDefault();
-              console.log('Link scroll down=', target.offset().top)
               $('html, body').animate({
                 scrollTop: target.offset().top //{scrollTop: targetOffset - 100} ?
               }, 1000, function() {
@@ -71,7 +72,7 @@ $(document).ready(function () {
 
   /* Mobile navigation */
   $('.js--nav-icon').click(function() {
-    let nav = $('.js--navigation__nav');
+    let nav = $('.js--navigation');
     let icon = $('.js--nav-icon ion-icon');
     
     nav.slideToggle(200); //slideToggle is a jQuery method to open/close a box

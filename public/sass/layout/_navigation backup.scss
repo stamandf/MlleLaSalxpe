@@ -1,0 +1,213 @@
+// Main nativation
+.navigation {
+    height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; //display left right to the end and then middle evenly spaced between
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3rem 10%;
+
+    @include respond(phone) {
+        padding: 1rem 5%;
+        width: 100%;
+        &__nav { 
+            display:none;
+        }
+    }
+    @include respond(tab-port) {
+        padding: 1rem 10%;
+        width: 100%;
+        &__nav { 
+            display:none;
+        }
+    }
+    @include respond(tab-land) {
+        padding: 1rem 10%;
+        width: 100%;
+        &__nav { 
+            display:none;
+        }
+    }
+    
+    
+    &__list {
+        text-align: center;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+
+        @include respond(phone) {
+            text-align: right;
+        }
+        @include respond(tab-port) {
+            text-align: right;
+        }
+        @include respond(tab-land) {
+            text-align: right;
+        }
+    }
+    &__item {
+        display: inline-block; //All menu items side-by-side
+        padding: 0 5rem 0 0;
+        &:last-child {
+            padding: 0;
+        }
+        @include respond(phone) {
+            display: block;  // Menu items are stacked one on top of the other
+            line-height: 2.8rem;
+            border-bottom: thin solid $color-grey-dark-2;
+            &:last-child {
+            padding: 0 5rem 0 0;
+            }   
+        }
+
+        @include respond(tab-port) {
+            display: block;  // Menu items are stacked one on top of the other
+            line-height: 2.8rem;
+            border-bottom: thin solid $color-grey-dark-2;
+            &:last-child {
+            padding: 0 5rem 0 0;
+            }   
+        }
+
+        @include respond(tab-land) {
+            display: block;  // Menu items are stacked one on top of the other
+            line-height: 2.8rem;
+            border-bottom: thin solid $color-grey-dark-2;
+            &:last-child {
+            padding: 0 5rem 0 0;
+            }   
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            color: $color-black;
+        }
+        &:hover,
+        &:active {
+            color: $color-primary-light3;
+        }
+    }
+
+}
+
+// Sticky navigation 
+.sticky {  //Replace sticky with stuck for new Waypoint version
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    // position: -webkit-sticky;
+    // position: sticky;
+    position: fixed;
+    justify-content: space-between; //display left right to the end and then middle evenly spaced between
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 1%;
+    background-color: #ffffff;
+    -webkit-transition: all 0.5s ease-in 0.5s;
+    transition: all 0.5s ease-in 0.5s;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+  
+    -webkit-box-shadow: 0 .2rem 1rem $color-grey-dark-2;
+            box-shadow: 0 .2rem 1rem $color-grey-dark-2;
+    
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    z-index: 9999;
+    
+}
+.sticky .navigation { //Replace sticky with stuck for new Waypoint version
+    padding: 1rem 10%;
+    // width: 100%;
+    -webkit-transition: all 0.5s ease-in 0.5s;
+            transition: all 0.5s ease-in 0.5s;
+    -webkit-transform: transla3eZ(0);
+            transform: translateZ(0);
+    z-index: 9999;
+
+    &__item {
+        padding-top: .5rem;
+        &:first-child {
+            padding-left: 5rem;
+        }
+    }
+
+    @include respond(small-phone) {
+        padding: 1rem 2%;
+        width: 100%;
+    }
+    
+    @include respond(phone) {
+        padding: 1rem 5%;
+        width: 100%;
+    }
+    @include respond(tab-port) {
+        padding: 1rem 10%;
+        width: 100%;
+    }
+    @include respond(tab-land) {
+        padding: 1rem 10%;
+        width: 100%;
+    }
+}
+
+//MOBILE NAVIGATION
+.mobile-nav-icon {
+    position: absolute;
+    padding: 1rem 2rem 0 2rem;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: none;
+
+    @include respond(tab-land) { //"Burger" menu icon should appear only for phone and tablet portrait screen
+        display: inline-block;
+        padding: 2rem 3rem 0 0;
+    }
+
+    @include respond(tab-port) { //"Burger" menu icon should appear only for phone and tablet portrait screen
+        display: inline-block;
+        padding: 1rem 3rem 2rem 0;
+    }
+
+    @include respond(phone) { //"Burger" menu icon should appear only for phone and tablet portrait screen
+        display: inline-block;
+        padding: 1rem 3rem 2rem 0;
+    }
+
+    @include respond(small-phone) { //"Burger" menu icon should appear only for phone and tablet portrait screen
+        display: inline-block;
+        padding: 1rem 2rem 2rem 0;
+    }
+    
+    
+}
+
+ion-icon {
+    font-size: 3rem;
+
+    @include respond(tab-land) { //"Burger" menu icon should appear only for phone and tablet portrait screen
+        font-size: 5rem;
+    }
+    @include respond(tab-port) { //"Burger" menu icon should appear only for phone and tablet portrait screen
+        font-size: 5rem;
+    }
+
+    @include respond(phone) { //"Burger" menu icon should appear only for phone and tablet portrait screen
+        font-size: 3rem;
+    }
+    @include respond(small-phone) { //"Burger" menu icon should appear only for phone and tablet portrait screen
+        font-size: 3rem;
+    }
+  }

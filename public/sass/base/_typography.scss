@@ -1,6 +1,7 @@
 body {
-    font-family: "Lato", sans-serif; //"Neue Haas Unica Pro",sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
+    line-height: 1.7;
     color: $color-black;
 }
 
@@ -11,22 +12,25 @@ body {
     color: $color-primary-light4;
     text-transform: uppercase;
     text-align: center;
-    font-size: 6rem;
-    font-weight: 400;
+    font-size: 5rem;
+    font-weight: 500;
     letter-spacing: 3.5rem;
-    // padding-top: 5%;
 
-    @include respond(port-land) {
+    @include respond(tab-land) {
         letter-spacing: 3rem;
         font-size: 5rem;
     }
-    @include respond(port-land) {
+    @include respond(tab-port) {
         letter-spacing: 2rem;
         font-size: 4rem;
     }
     @include respond(phone) {
         letter-spacing: 1rem;
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+    @include respond(small-phone) {
+        letter-spacing: .8rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -69,6 +73,7 @@ body {
 .heading-tertiary {
     font-size: 2rem;
     font-weight: 400;
+    letter-spacing: .2rem;
     text-transform: uppercase;
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -76,8 +81,12 @@ body {
 
 .paragraph {
     font-size: $default-font-size;
+    letter-spacing: .15rem;
     text-align: justify;
     margin-bottom: 3rem;
+    &__text--bold {
+        font-weight: 700;
+    }
 }
 
 .paragraph-footer {
@@ -96,4 +105,12 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 2rem;
+}
+
+.slogan-text__box {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

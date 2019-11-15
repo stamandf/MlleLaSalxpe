@@ -1,11 +1,23 @@
 .photo {
     -webkit-box-pack: right;
         -ms-flex-pack: right;
-            justify-content: right;
+        justify-content: center;
+
     &__img {
-        max-width: 30rem;
+        max-width: 30rem; //To remove later.
         height: auto;
-        
+        outline-offset: 1rem;
+        overflow: hidden;
+        &--main {
+            width: 100%;
+            // box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        }
+        &--sub {
+            width: 95%;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+            // background-color: #000;
+            opacity: 0.8;
+        }
         @include respond(phone) {
             height: 30rem;
             width: 30rem;

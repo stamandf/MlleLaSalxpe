@@ -1,15 +1,17 @@
+
 .header {
-        position: relative;
-        top: 0%;
-        text-align: center;
-        cursor: pointer;
-        // -webkit-transform: translateZ(0);
-        //     transform: translateZ(0);
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/AdobeStock_sunrise2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.header__logo {
-    width: 56.6rem;
-    margin-top: 1rem;
+.header__logo-white {
+    width: 25%;
+    // width: 46.6rem;
+    margin-top: 4rem;
+    float: left;
     // -webkit-transform: translateZ(0);
     //         transform: translateZ(0);
 
@@ -37,10 +39,17 @@
     }
 }
 
-.sticky .header__logo {
-        margin-top: 1rem;
-        width: 18.8rem;
-        height: 2.7rem;
+
+.header__logo-black { display: none; }
+.sticky .header__logo-white { display: none; }
+
+.sticky .header__logo-black {
+        display: block;
+        width: 20%;
+        margin-top: 2rem;
+        float: left;
+        // width: 18.8rem;
+        // height: 2.7rem;
         -webkit-transition: all 0.5s ease-in 0s;
                 transition: all 0.5s ease-in 0s;
         -webkit-transform: translateZ(0);
