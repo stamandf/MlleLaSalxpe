@@ -641,28 +641,32 @@ section {
       margin-top: 0;
       text-align: right;
       padding: 1rem 2%;
-      width: 100%; } }
+      width: 100%;
+      display: none; } }
   @media only screen and (max-width: 37.5em) {
     .navigation {
       float: left;
       margin-top: 0;
       text-align: right;
       padding: 1rem 5%;
-      width: 100%; } }
+      width: 100%;
+      display: none; } }
   @media only screen and (max-width: 56.25em) {
     .navigation {
       float: left;
       margin-top: 0;
       padding: 1rem 10%;
       width: 100%;
-      text-align: right; } }
+      text-align: right;
+      display: none; } }
   @media only screen and (max-width: 75em) {
     .navigation {
       float: left;
       margin-top: 0;
       padding: 1rem 10%;
       width: 100%;
-      text-align: right; } }
+      text-align: right;
+      display: none; } }
 
 .navigation li {
   display: inline-block;
