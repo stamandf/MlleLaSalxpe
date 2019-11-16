@@ -1,20 +1,22 @@
 .swatches {
     background-color:inherit;
     padding: 1rem; 
-    width: 100%;
+    display: inline-block;
+    width: 35rem;
+    height: auto;
     max-width: 100%;
     display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    // display: -ms-flexbox;
+  
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+        // -ms-flex-direction: row;
+        //     flex-direction: row;
+    // -ms-flex-wrap: nowrap;
+    //     flex-wrap: nowrap;
+    // -webkit-box-pack: center;
+    //     -ms-flex-pack: center;
+    // justify-content: center;
     
 }
 .swatch {

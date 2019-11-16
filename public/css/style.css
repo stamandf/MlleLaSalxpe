@@ -151,6 +151,7 @@ body {
   font-weight: 400;
   letter-spacing: .2rem;
   text-transform: uppercase;
+  text-align: center;
   margin-top: 4rem;
   margin-bottom: 2rem; }
 
@@ -184,6 +185,10 @@ body {
 
 .u-center-text {
   text-align: center !important; }
+
+.u-center-content {
+  margin-left: 25% !important;
+  margin-right: 33% !important; }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
@@ -389,20 +394,13 @@ body {
 .swatches {
   background-color: inherit;
   padding: 1rem;
-  width: 100%;
+  display: inline-block;
+  width: 35rem;
+  height: auto;
   max-width: 100%;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  -webkit-box-direction: normal; }
 
 .swatch {
   height: 3.2rem;
@@ -483,6 +481,10 @@ section {
 
 .section-shades {
   margin-bottom: 10rem; }
+
+.shades-container {
+  display: flex;
+  justify-content: center; }
 
 .js--wp-1 {
   opacity: 0; }
