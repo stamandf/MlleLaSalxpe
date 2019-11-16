@@ -187,8 +187,8 @@ body {
   text-align: center !important; }
 
 .u-center-content {
-  margin-left: 25% !important;
-  margin-right: 33% !important; }
+  display: flex !important;
+  justify-content: center !important; }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem !important; }
@@ -532,6 +532,44 @@ section {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1; }
+
+.button-full:link, .button-full:visited,
+.button-full input[type=submit] {
+  display: inline-block;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: center;
+  color: #fff;
+  background-color: #703e19;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border: 2px solid #faf0e9;
+  border-radius: 4px;
+  width: 15rem;
+  outline: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  text-decoration: none !important; }
+  .button-full:link:hover,
+  .button-full:link input[type=submit], .button-full:visited:hover,
+  .button-full:visited input[type=submit],
+  .button-full input[type=submit]:hover,
+  .button-full input[type=submit] input[type=submit] {
+    background-color: #dbb25d;
+    color: #481a0f;
+    cursor: pointer; }
+  .button-full:link:active,
+  .button-full:link input[type=submit], .button-full:visited:active,
+  .button-full:visited input[type=submit],
+  .button-full input[type=submit]:active,
+  .button-full input[type=submit] input[type=submit] {
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(27, 27, 27, 0.15);
+    box-shadow: 0 0.5rem 1rem rgba(27, 27, 27, 0.15);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); }
 
 .header {
   height: 100vh;

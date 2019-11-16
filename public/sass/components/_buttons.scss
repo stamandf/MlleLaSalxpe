@@ -1,0 +1,70 @@
+
+// .button-full:link,
+// .button-full:visited,
+// input[type=submit] {
+//     display: inline-block;
+//         font-size: $medium-font-size;
+//         font-family: inherit;
+//         text-align: center;
+//         color: $color-primary-light5;
+//         background-color: $color-primary-dark4;
+//         padding: 2rem;
+//         margin-top: 1rem;
+//         border: 2px solid $color-primary-light4;
+//         border-radius: 4px;
+//         width: 15rem;
+//     // padding: 1rem 3rem;
+//     text-decoration: none;
+//     -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+//     transition: background-color 0.2s, border 0.2s, color 0.2s;
+// }
+
+
+// .button-full:hover,
+// .button-full:active,
+// input[type=submit] {
+//   border: 2px solid $color-primary-light3;
+//   -webkit-box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+//     box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+//     -webkit-transform: translateY(4px);
+//     transform: translateY(4px);
+// }
+
+.button-full {
+    &:link,
+    &:visited,  
+    input[type=submit] { 
+        display: inline-block;
+        font-size: $default-font-size;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        font-weight: 600;
+        font-family: inherit;
+        text-align: center;
+        color: $color-white;
+        background-color: $color-primary-dark;
+        padding: 1.5rem;
+        margin-top: 1rem;
+        border: 2px solid $color-primary-light4;
+        border-radius: 4px;
+        width: 15rem;
+        outline: none;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        text-decoration: none !important;   
+
+        &:hover, 
+        input[type=submit] {
+            background-color: $color-primary-light;
+            color: $color-primary-dark2;
+            cursor: pointer;
+        }
+        &:active,
+        input[type=submit] {
+            -webkit-box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+                    box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+            -webkit-transform: translateY(4px);
+                    transform: translateY(4px);
+        }
+    }
+}        
