@@ -100,6 +100,11 @@ body {
   font-size: 5rem;
   font-weight: 500;
   letter-spacing: 3.5rem; }
+  .heading-primary--sub {
+    font-size: 2.5rem;
+    font-style: italic;
+    letter-spacing: 1rem;
+    font-weight: 600; }
   @media only screen and (max-width: 75em) {
     .heading-primary {
       letter-spacing: 3rem;
@@ -152,7 +157,6 @@ body {
   letter-spacing: .2rem;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 4rem;
   margin-bottom: 2rem; }
 
 .paragraph {
@@ -162,6 +166,19 @@ body {
   margin-bottom: 3rem; }
   .paragraph__text--bold {
     font-weight: 700; }
+  .paragraph__text--em {
+    font-style: italic; }
+  .paragraph--columns {
+    -moz-column-count: 2;
+    -moz-column-gap: 3rem;
+    -moz-column-rule: 1px solid #eeee;
+    column-count: 2;
+    column-gap: 3rem;
+    column-rule: 1px solid #eeee;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
 
 .paragraph-footer {
   font-size: 1.8rem;
@@ -227,7 +244,7 @@ body {
   font-weight: 700 !important; }
 
 .footer {
-  background-color: #382616;
+  background-color: #1a1a1a;
   color: #faf0e9;
   font-size: 1.5rem;
   padding: 10rem 0; }
@@ -299,14 +316,14 @@ body {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-  background-color: #382616;
+  background-color: #1a1a1a;
   color: #bababa;
   text-decoration: none; }
   .form__input {
     font-family: inherit;
     color: #bababa;
     outline: none;
-    background-color: #382616;
+    background-color: #1a1a1a;
     font-size: 1.5rem;
     padding: 1rem 2rem 1rem 0;
     width: 100%;
@@ -326,7 +343,7 @@ body {
     font-size: 1.8rem;
     font-family: inherit;
     color: #bababa;
-    background-color: #382616;
+    background-color: #1a1a1a;
     padding: 1.3rem;
     margin-top: 1rem;
     border: 2px solid #faf0e9;
@@ -349,8 +366,9 @@ body {
 .clear .button {
   font-size: 1.8rem !important;
   font-family: inherit !important;
+  text-transform: uppercase !important;
   color: #bababa !important;
-  background-color: #382616 !important;
+  background-color: #1a1a1a !important;
   padding: 1.3rem !important;
   margin-top: 1rem !important;
   border: 2px solid #faf0e9 !important;
@@ -374,7 +392,7 @@ body {
   font-family: inherit !important;
   color: #bababa !important;
   outline: none !important;
-  background-color: #382616 !important;
+  background-color: #1a1a1a !important;
   font-size: 1.5rem !important;
   padding: 1rem 2rem 1rem 0 !important;
   width: 100% !important;
@@ -543,7 +561,7 @@ section {
   font-family: inherit;
   text-align: center;
   color: #fff;
-  background-color: #703e19;
+  background-color: #1a1a1a;
   padding: 1.5rem;
   margin-top: 1rem;
   border: 2px solid #faf0e9;
@@ -558,7 +576,7 @@ section {
   .button-full:visited input[type=submit],
   .button-full input[type=submit]:hover,
   .button-full input[type=submit] input[type=submit] {
-    background-color: #dbb25d;
+    background-color: #faf0e9;
     color: #481a0f;
     cursor: pointer; }
   .button-full:link:active,
@@ -851,8 +869,7 @@ section {
       width: 100%; }
     .photo__img--sub {
       width: 95%;
-      box-shadow: 0 1.5rem 4rem rgba(27, 27, 27, 0.4);
-      opacity: 0.8; }
+      box-shadow: 0 2rem 4rem rgba(27, 27, 27, 0.4); }
     @media only screen and (max-width: 37.5em) {
       .photo__img {
         height: 30rem;

@@ -16,6 +16,13 @@ body {
     font-weight: 500;
     letter-spacing: 3.5rem;
 
+    &--sub {
+        font-size: 2.5rem;
+        font-style: italic;
+        letter-spacing: 1rem;
+        font-weight: 600;
+    }
+
     @include respond(tab-land) {
         letter-spacing: 3rem;
         font-size: 5rem;
@@ -34,6 +41,7 @@ body {
     }
 }
 
+
 .heading__text-box {
     text-align: center;
 }
@@ -43,7 +51,6 @@ body {
     
     &--main {
         display: block;
-        // margin-top: 5rem;
         margin-bottom: 5rem;
         font-size: 4rem;
         font-weight: 700;
@@ -76,7 +83,6 @@ body {
     letter-spacing: .2rem;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
@@ -87,6 +93,24 @@ body {
     margin-bottom: 3rem;
     &__text--bold {
         font-weight: 700;
+    }
+    &__text--em {
+        font-style: italic;
+    }
+
+    &--columns {
+        -moz-column-count: 2;
+        -moz-column-gap: 3rem;
+        -moz-column-rule: 1px solid $color-grey-light-1;
+
+        column-count: 2;
+        column-gap: 3rem;
+        column-rule: 1px solid $color-grey-light-1;
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
     }
 }
 

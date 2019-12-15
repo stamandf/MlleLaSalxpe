@@ -14,9 +14,9 @@
         }
         &--sub {
             width: 95%;
-            box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+            box-shadow: 0 2rem 4rem rgba($color-black, .4);
             // background-color: #000;
-            opacity: 0.8;
+            // opacity: 0.8;
         }
         @include respond(phone) {
             height: 30rem;

@@ -42,7 +42,8 @@
         font-family: inherit;
         text-align: center;
         color: $color-white;
-        background-color: $color-primary-dark;
+        background-color: $color-black-brown;
+        // background-color: $color-primary-dark;
         padding: 1.5rem;
         margin-top: 1rem;
         border: 2px solid $color-primary-light4;
@@ -55,7 +56,8 @@
 
         &:hover, 
         input[type=submit] {
-            background-color: $color-primary-light;
+            // background-color: $color-primary-light;
+            background-color: $color-primary-light4;
             color: $color-primary-dark2;
             cursor: pointer;
         }
