@@ -726,6 +726,22 @@ section {
       text-align: right;
       display: none; } }
 
+@media only screen and (max-width: 32em) {
+  .navigation ul {
+    background-color: #c06a2b; } }
+
+@media only screen and (max-width: 37.5em) {
+  .navigation ul {
+    background-color: #c06a2b; } }
+
+@media only screen and (max-width: 56.25em) {
+  .navigation ul {
+    background-color: #c06a2b; } }
+
+@media only screen and (max-width: 75em) {
+  .navigation ul {
+    background-color: #c06a2b; } }
+
 .navigation li {
   display: inline-block;
   text-transform: uppercase;

@@ -40,7 +40,20 @@
         display: none;
     }
 }
-
+.navigation ul {
+    @include respond(small-phone) {
+        background-color: $color-primary;
+    }
+    @include respond(phone) {
+        background-color: $color-primary;
+    }
+    @include respond(tab-port) {
+        background-color: $color-primary;
+    }
+    @include respond(tab-land) {
+        background-color: $color-primary;
+    }
+}
 .navigation li {
     display: inline-block;
     text-transform: uppercase;
@@ -54,6 +67,7 @@
         // line-height: 2.8rem;
         padding: 1.8rem 0 .5 0;
         border-bottom: thin solid $color-white;
+        
         // &:last-child {
         // padding: 0 5rem 0 0;
         // }   
