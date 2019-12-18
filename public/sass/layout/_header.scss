@@ -8,20 +8,21 @@
 }
 
 .header__logo-white {
-    width: 25%;
+    width: 35%;
     // width: 46.6rem;
-    margin-top: 4rem;
-    float: left;
-    // -webkit-transform: translateZ(0);
-    //         transform: translateZ(0);
+    // margin-top: 4rem;
+    // float: left;
+    
 
     @include respond(tab-land) {
-        width: 46.6rem;
-        height: 6.8rem;
+        width: 40%;
+        // width: 46.6rem;
+        // height: 6.8rem;
     }
     @include respond(tab-port) {
-        width: 33.96rem;
-        height: 4.92rem;
+        width: 40%;
+        // width: 33.96rem;
+        // height: 4.92rem;
     }
     // @include respond(tab-port) {
     //     width: 28.3rem;
@@ -29,13 +30,15 @@
     // }
 
     @include respond(phone) {
-        width: 18.8rem;
-        height: 2.7rem;
+        width: 45%;
+        // width: 18.8rem;
+        // height: 2.7rem;
     }
 
     @include respond(small-phone) {
-        width: 18.8rem; //maintain size of logo
-        height: 2.7rem;
+        width: 49%;
+        // width: 18.8rem; //maintain size of logo
+        // height: 2.7rem;
     }
 }
 
@@ -44,10 +47,10 @@
 .sticky .header__logo-white { display: none; }
 
 .sticky .header__logo-black {
-        display: block;
-        width: 20%;
-        margin-top: 2rem;
-        float: left;
+        display: inline-block;  //This will display logo
+        width: 35%;
+        // margin-top: 2rem;
+        // float: left;
         // width: 18.8rem;
         // height: 2.7rem;
         -webkit-transition: all 0.5s ease-in 0s;
@@ -56,19 +59,23 @@
             transform: translateZ(0);
 
         @include respond(tab-land) {
-            width: 46.6rem;
-            height: 6.8rem;
+            width: 40%;
+            // width: 46.6rem;
+            // height: 6.8rem;
         }
         @include respond(tab-port) {
-            width: 33.96rem;
-            height: 4.92rem;
+            width: 40%;
+            // width: 33.96rem;
+            // height: 4.92rem;
         }
         @include respond(phone) {
-            width: 18.8rem;
-            height: 2.7rem;
+            width: 45%;
+            // width: 18.8rem;
+            // height: 2.7rem;
         }
         @include respond(small-phone) {
-            width: 18.8rem; //maintain size of logo
-            height: 2.7rem;
+            width: 49%;
+            // width: 18.8rem; //maintain size of logo
+            // height: 2.7rem;
         }
 }

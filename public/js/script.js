@@ -74,15 +74,16 @@ $(document).ready(function () {
   $('.js--nav-icon').click(function() {
     let nav = $('.js--navigation');
     let icon = $('.js--nav-icon ion-icon');
-    
+    let logo = $('.js--nav-logo');
     nav.slideToggle(200); //slideToggle is a jQuery method to open/close a box
 
     if (icon.attr("name") === "menu") { //if it's the "menu" icon 
-      icon.attr("name", "close")  //then replace with "close" icon 
+      icon.attr("name", "close")  //then replace with "close" icon
+      logo.addClass('u-disappear'); 
       
     } else {  //Menu is opened need to be closed
-      icon.attr("name", "menu")    //replace "close" icon with "menu" icon
-      
+      icon.attr("name", "menu");    //replace "close" icon with "menu" icon
+      logo.removeClass('u-disappear');
     }
       
   });

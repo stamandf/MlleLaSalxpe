@@ -1,61 +1,103 @@
 // Main nativation
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: .5% 2%;
+    @include respond(small-phone) {
+        padding: .5% 3%;
+    }
+    
+    @include respond(phone) {
+        padding: .5% 3%;
+    }
+    @include respond(tab-port) {
+        padding: .5% 3%;
+
+    }
+    @include respond(tab-land) {
+        padding: .5% 3%;
+
+    }
+}
+
+.nav-logo {
+    align-self: center; //To vertically center logo
+}
 .navigation {
-    float: right;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
     list-style: none;
-    margin-top: 4rem;
+    
     @include respond(small-phone) {
-        float: left;
-        margin-top: 0;
-        // margin-left: 2rem;
+        transform: translate(-.5%, 20%);
+        background-color: rgba($color-primary-dark, .3);
+        box-shadow: 4rem 4rem 4rem rgba($color-primary-dark, .2);
+        @supports (-webkit-backdrop-filter: blur(4rem)) or (backdrop-filter: blur(4rem)) {
+            -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+            background-color: rgba($color-primary-dark, .3);
+        }
+        width: 100%;
         text-align: right;
+        align-items: center;
         padding: 1rem 2%;
-        width: 100%;
         display: none;
+        z-index:1500;
     }
     @include respond(phone) {
-        float: left;
-        margin-top: 0;
-        // margin-left: 2rem;
+        transform: translate(-.5%, 20%);
+        background-color: rgba($color-primary-dark, .3);
+        box-shadow: 4rem 4rem 4rem rgba($color-primary-dark, .2);
+        @supports (-webkit-backdrop-filter: blur(4rem)) or (backdrop-filter: blur(4rem)) {
+            -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+            background-color: rgba($color-primary-dark, .3);
+        }
+        width: 100%;
         text-align: right;
+        align-items: center;
         padding: 1rem 5%;
-        width: 100%;
+        // width: 100%;
         display: none;
+        z-index:1500;
     }
     @include respond(tab-port) {
-        float: left;
-        margin-top: 0;
-        padding: 1rem 10%;
+        transform: translate(-.5%, 20%);
+        background-color: rgba($color-primary-dark, .3);
+        box-shadow: 4rem 4rem 4rem rgba($color-primary-dark, .2);
+        @supports (-webkit-backdrop-filter: blur(4rem)) or (backdrop-filter: blur(4rem)) {
+            -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+            background-color: rgba($color-primary-dark, .3);
+        }
         width: 100%;
-        // margin-left: 2rem;
+        padding: 1rem 10%;
+        align-items: center;
         text-align: right;
         display: none;
+        z-index:1500;
     }
     @include respond(tab-land) {
-        float: left;
-        margin-top: 0;
-        padding: 1rem 10%;
+        transform: translate(-.5%, 20%);
+        background-color: rgba($color-primary-dark, .3);
+        box-shadow: 4rem 4rem 4rem rgba($color-primary-dark, .2);
+        @supports (-webkit-backdrop-filter: blur(4rem)) or (backdrop-filter: blur(4rem)) {
+            -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+            background-color: rgba($color-primary-dark, .3);
+        }
         width: 100%;
-        // margin-left: 2rem;
+        padding: 1rem 10%;
+        align-items: center;
         text-align: right;
         display: none;
+        z-index:1500;
     }
 }
-.navigation ul {
-    @include respond(small-phone) {
-        background-color: $color-primary;
-    }
-    @include respond(phone) {
-        background-color: $color-primary;
-    }
-    @include respond(tab-port) {
-        background-color: $color-primary;
-    }
-    @include respond(tab-land) {
-        background-color: $color-primary;
-    }
-}
+
 .navigation li {
-    display: inline-block;
+    // display: inline-block;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 400;
@@ -63,34 +105,21 @@
     padding: 1rem 0;
 
     @include respond(phone) {
-        display: block;  // Menu items are stacked one on top of the other
-        // line-height: 2.8rem;
+        flex-direction: column;
         padding: 1.8rem 0 .5 0;
         border-bottom: thin solid $color-white;
-        
-        // &:last-child {
-        // padding: 0 5rem 0 0;
-        // }   
     }
 
     @include respond(tab-port) {
-        display: block;  // Menu items are stacked one on top of the other
-        // line-height: 2.8rem;
+        flex-direction: column;
         padding: 1.8rem 0 .5 0;
         border-bottom: thin solid $color-white;
-        // &:last-child {
-        // padding: 0 5rem 0 0;
-        // }   
     }
 
     @include respond(tab-land) {
-        display: block;  // Menu items are stacked one on top of the other
-        // line-height: 2.8rem;
+        flex-direction: column;
         padding: 1.8rem 0 .5 0;
         border-bottom: thin solid $color-white;
-        // &:last-child {
-        // padding: 0 5rem 0 0;
-        // }   
     }
   }
 .navigation li a:link,
@@ -98,14 +127,13 @@
     padding: 1rem 0;
     color: $color-white;
     text-decoration: none;
-    // border-bottom: 2px solid transparent;
+    margin-left: auto;
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
   }
   
 .navigation li a:hover,
 .navigation li a:active {
-    // border-bottom: .3rem solid $color-primary-sun;
     color: $color-primary-light3;
   }
   
@@ -125,21 +153,48 @@
 }
 
 .sticky .navigation { //Replace sticky with stuck for new Waypoint version
-    margin-top: 1.3rem;
     @include respond(small-phone) {
+        background-color: rgba($color-white, .3);
+        box-shadow: 4rem 4rem 4rem rgba($color-black, .2);
+        @supports (-webkit-backdrop-filter: blur(4rem)) or (backdrop-filter: blur(4rem)) {
+            -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+            background-color: rgba($color-white, .3);
+        }
         padding: 1rem 2%;
         width: 100%;
     }
     
     @include respond(phone) {
+        background-color: rgba($color-white, .3);
+        box-shadow: 4rem 4rem 4rem rgba($color-black, .2);
+        @supports (-webkit-backdrop-filter: blur(4rem)) or (backdrop-filter: blur(4rem)) {
+            -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+            background-color: rgba($color-white, .3);
+        }
         padding: 1rem 5%;
         width: 100%;
     }
     @include respond(tab-port) {
+        background-color: rgba($color-white, .3);
+        box-shadow: 4rem 4rem 4rem rgba($color-black, .2);
+        @supports (-webkit-backdrop-filter: blur(4rem)) or (backdrop-filter: blur(4rem)) {
+            -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+            background-color: rgba($color-white, .3);
+        }
         padding: 1rem 10%;
         width: 100%;
     }
     @include respond(tab-land) {
+        background-color: rgba($color-white, .3);
+        box-shadow: 4rem 4rem 4rem rgba($color-black, .2);
+        @supports (-webkit-backdrop-filter: blur(4rem)) or (backdrop-filter: blur(4rem)) {
+            -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+            background-color: rgba($color-white, .3);
+        }
         padding: 1rem 10%;
         width: 100%;
     }
@@ -147,39 +202,35 @@
 
 
 .sticky .navigation li {
-    display: inline-block;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 400;
-    margin-left: 4rem;
-    padding: 1rem 0;
 
     @include respond(phone) {
-        display: block;  // Menu items are stacked one on top of the other
+        flex-direction: column;
         line-height: 2.8rem;
-        // padding: 1.8rem 0 .5 0;
         border-bottom: thin solid $color-black;
     }
 
     @include respond(tab-port) {
-        display: block;  // Menu items are stacked one on top of the other
+        flex-direction: column;
         line-height: 2.8rem;
         border-bottom: thin solid $color-black;
     }
 
     @include respond(tab-land) {
-        display: block;  // Menu items are stacked one on top of the other
+        flex-direction: column;
         line-height: 2.8rem;
         border-bottom: thin solid $color-black;
     }
   }
 .sticky .navigation li a:link,
 .sticky .navigation li a:visited {
-    padding: 1rem 0 3rem 0;
     color: #000000;
-    // border-bottom: 0;
 }
-.sticky .mobile-nav-icon ion-icon { color: $color-black; }
+.sticky .mobile-nav-icon ion-icon { 
+    color: $color-black; 
+}
 .sticky .navigation li a:hover,
 .sticky .navigation li a:active {
     color: $color-primary-light3;
@@ -190,42 +241,44 @@
 //MOBILE NAVIGATION
 .mobile-nav-icon {
     // float: right;
-    position: absolute;
-    top: 0;
-    right: 0;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
     // margin-top: 2rem;
+    margin-left: auto;
+    margin-bottom: auto;
     cursor: pointer;
     display: none;
     color: $color-white;
+    // background-color: #3fc5f0; //trace
     font-size: 3rem;
 
     @include respond(tab-land) { //"Burger" menu icon should appear only for phone and tablet portrait screen
         display: inline-block;
         font-size: 5rem;
         // padding: 2rem 4rem 0 0;
-    
-        padding: 1rem 10%;
+        // padding: 1rem 10%; 
     }
 
     @include respond(tab-port) { //"Burger" menu icon should appear only for phone and tablet portrait screen
         display: inline-block;
         font-size: 5rem;
         // padding: 1rem 4rem 2rem 0;
-        padding: 1rem 10%;
+        // padding: 1rem 10%;
     }
 
     @include respond(phone) { //"Burger" menu icon should appear only for phone and tablet portrait screen
         display: inline-block;
         font-size: 3rem;
         // padding: 1rem 3rem 2rem 0;
-        padding: 1rem 5%;
+        // padding: 1rem 5%;
     }
 
     @include respond(small-phone) { //"Burger" menu icon should appear only for phone and tablet portrait screen
         display: inline-block;
         font-size: 3rem;
         // padding: 1rem 2rem 2rem 0;
-        padding: 1rem 5%;
+        // padding: 1rem 5%;
     }
 }
 
