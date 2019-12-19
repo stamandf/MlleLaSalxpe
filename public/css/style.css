@@ -949,7 +949,8 @@ section {
     .photo__img--main {
       width: 100%; }
     .photo__img--sub {
-      width: 95%;
+      width: 100%;
+      margin-top: 2rem;
       box-shadow: 0 2rem 4rem rgba(27, 27, 27, 0.4); }
     @media only screen and (max-width: 37.5em) {
       .photo__img {
