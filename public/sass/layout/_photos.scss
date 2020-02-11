@@ -1,7 +1,9 @@
 .photo {
+    display: flex;
     -webkit-box-pack: right;
         -ms-flex-pack: right;
         justify-content: center;
+        align-items: center;
 
     &__img {
         max-width: 30rem; //To remove later.
@@ -9,7 +11,9 @@
         outline-offset: 1rem;
         overflow: hidden;
         &--main {
-            width: 100%;
+            width: 70%;
+            align-self: center;
+            // width: 100%;
             // box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         }
         &--sub {
@@ -20,9 +24,16 @@
             // background-color: #000;
             // opacity: 0.8;
         }
+        &--sub2 {
+            width: 70%;
+            align-self: center;
+            // box-shadow: 0 2rem 4rem rgba($color-black, .4);
+        }
         @include respond(phone) {
             height: 30rem;
             width: 30rem;
+            align-items: center;
+            text-align: center;
         }
     }
 }

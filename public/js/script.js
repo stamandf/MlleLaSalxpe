@@ -22,10 +22,11 @@ $(document).ready(function () {
         .click(function(event) {
           let nav = $('.js--navigation');
           let icon = $('.js--nav-icon ion-icon');
-          console.log('icon=', icon);
+          let logo = $('.js--nav-logo');
           if (icon.attr("name") === "close") { //if on mobile view, menu is open and must be closed
               nav.slideToggle(200); //when a link is clicked on mobile close menu
-              icon.attr("name", "menu")  //then replace with "close" icon 
+              icon.attr("name", "menu")  //then replace with "menu" icon 
+              logo.removeClass('u-disappear');  //bring back logo when menu closed
             } 
           // On-page links
           if (

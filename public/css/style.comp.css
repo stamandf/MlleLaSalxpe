@@ -97,7 +97,7 @@ body {
   color: #faf0e9;
   text-transform: uppercase;
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 500;
   letter-spacing: 3.5rem; }
   .heading-primary--sub {
@@ -789,11 +789,10 @@ section {
 
 .navigation li {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-left: 4rem;
-  padding: 1rem 0;
-  white-space: nowrap; }
+  padding: 1rem 0; }
   @media only screen and (max-width: 37.5em) {
     .navigation li {
       flex-direction: column;
@@ -883,7 +882,7 @@ section {
 
 .sticky .navigation li {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400; }
   @media only screen and (max-width: 37.5em) {
     .sticky .navigation li {
@@ -939,32 +938,24 @@ section {
       font-size: 3rem; } }
 
 .photo {
-  display: flex;
   -webkit-box-pack: right;
   -ms-flex-pack: right;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
   .photo__img {
     max-width: 30rem;
     height: auto;
     outline-offset: 1rem;
     overflow: hidden; }
     .photo__img--main {
-      width: 70%;
-      align-self: center; }
+      width: 100%; }
     .photo__img--sub {
       width: 100%;
       margin-top: 2rem;
       box-shadow: 0 2rem 4rem rgba(27, 27, 27, 0.4); }
-    .photo__img--sub2 {
-      width: 70%;
-      align-self: center; }
     @media only screen and (max-width: 37.5em) {
       .photo__img {
         height: 30rem;
-        width: 30rem;
-        align-items: center;
-        text-align: center; } }
+        width: 30rem; } }
 
 *,
 *::after,
