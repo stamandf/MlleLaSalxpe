@@ -6,7 +6,7 @@
     padding: 10rem 0;
 
     @include respond(tab-land) {
-        padding: 8rem 0;
+        padding: 8rem 2rem;
 
         .row .col-1-of-3:not(:last-child) { 
             margin-bottom: 3rem !important; 

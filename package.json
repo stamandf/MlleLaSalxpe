@@ -1,12 +1,12 @@
 {
-  "name": "MlleLaSalxpe",
+  "name": "StevenMyrthil",
   "version": "1.0.0",
-  "description": "Landing page for MlleLaSalxpe",
+  "description": "Landing page for STEVEN MYRTHIL",
   "main": "index.js",
   "scripts": {
     "devserver": "node server/server.js",
     "watch:sass": "node-sass public/sass/main.scss public/css/style.css -w",
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
     "compile:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
     "concat:css": "concat -o public/css/style.concat.css public/css/icon-fonts.css public/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.concat.css -o public/css/style.prefix.css",

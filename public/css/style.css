@@ -97,7 +97,7 @@ body {
   color: #faf0e9;
   text-transform: uppercase;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-weight: 500;
   letter-spacing: 3.5rem; }
   .heading-primary--sub {
@@ -108,7 +108,7 @@ body {
   @media only screen and (max-width: 75em) {
     .heading-primary {
       letter-spacing: 3rem;
-      font-size: 5rem; }
+      font-size: 3.5rem; }
       .heading-primary--sub {
         font-size: 2.5rem;
         font-style: italic;
@@ -117,7 +117,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .heading-primary {
       letter-spacing: 2rem;
-      font-size: 4rem; }
+      font-size: 3.5rem; }
       .heading-primary--sub {
         font-size: 2.5rem;
         font-style: italic;
@@ -135,7 +135,7 @@ body {
   @media only screen and (max-width: 32em) {
     .heading-primary {
       letter-spacing: .8rem;
-      font-size: 2.7rem; }
+      font-size: 2.2rem; }
       .heading-primary--sub {
         font-size: 1.5rem;
         font-style: italic;
@@ -270,7 +270,7 @@ body {
   padding: 10rem 0; }
   @media only screen and (max-width: 75em) {
     .footer {
-      padding: 8rem 0; }
+      padding: 8rem 2rem; }
       .footer .row .col-1-of-3:not(:last-child) {
         margin-bottom: 3rem !important; } }
   @media only screen and (max-width: 56.25em) {
