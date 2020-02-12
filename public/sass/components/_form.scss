@@ -17,7 +17,6 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     background-color: $color-black-brown;
-    // background-color: $color-primary-dark4;
     color: $color-primary-light5;
     text-decoration: none;
     
@@ -27,7 +26,6 @@
         color: $color-primary-light5;
         outline: none;
         background-color: $color-black-brown;
-        // background-color: $color-primary-dark4;
         font-size: $small-font-size;
         padding: 1rem 2rem 1rem 0;
         width: 100%;
@@ -54,7 +52,6 @@
         font-size: $default-font-size;
         font-family: inherit;
         color: $color-primary-light5;
-        // background-color: $color-primary-dark4;
         background-color: $color-black-brown;
         padding: 1.3rem;
         margin-top: 1rem;
@@ -84,10 +81,8 @@
         font-size: $default-font-size !important;
         font-family: inherit !important;
         text-transform: uppercase !important;
-        // text-align: center;
         color: $color-primary-light5 !important;
         background-color: $color-black-brown !important;
-        // background-color: $color-primary-dark4 !important;
         padding: 1.3rem !important;
         margin-top: 1rem !important;
         border: 2px solid $color-primary-light4 !important;
@@ -95,7 +90,6 @@
         width: 13rem !important;
         height: 5rem !important;
         line-height: 0 !important;
-        // outline: none !important;
         -webkit-transition: all .5s !important;
         transition: all .5s !important;
 
@@ -118,7 +112,6 @@
         color: $color-primary-light5 !important;
         outline: none !important;
         background-color: $color-black-brown !important;
-        // background-color: $color-primary-dark4 !important;
         font-size: $small-font-size !important;
         padding: 1rem 2rem 1rem 0 !important;
         width: 100% !important;
