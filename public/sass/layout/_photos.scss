@@ -13,21 +13,17 @@
         &--main {
             width: 70%;
             align-self: center;
-            // width: 100%;
-            // box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+            
         }
         &--sub {
             width: 100%;
             margin-top: 2rem;
-            // width: 95%;
             box-shadow: 0 2rem 4rem rgba($color-black, .4);
-            // background-color: #000;
-            // opacity: 0.8;
+            
         }
         &--sub2 {
             width: 70%;
             align-self: center;
-            // box-shadow: 0 2rem 4rem rgba($color-black, .4);
         }
         @include respond(phone) {
             height: 30rem;
