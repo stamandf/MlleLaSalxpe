@@ -614,7 +614,6 @@ section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/AdobeStock_sunrise2.jpg);
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
   background-attachment: fixed; }
 
 .header__logo-white {

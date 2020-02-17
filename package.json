@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "devserver": "node server/server.js",
-    "watch:sass": "node-sass public/sass/main.scss public/css/style.css",
+    "watch:sass": "node-sass public/sass/main.scss public/css/style.css -w",
     "start": "node server/server.js",
     "compile:sass": "node-sass public/sass/main.scss public/css/style.comp.css",
     "concat:css": "concat -o public/css/style.concat.css public/css/style.comp.css",
