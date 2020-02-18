@@ -610,13 +610,8 @@ section {
     transform: translateY(4px); }
 
 .header {
-  content: "";
   height: 100vh;
   width: 100vw;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/AdobeStock_sunrise2.jpg);
   background-size: cover;
   -webkit-background-size: cover;
@@ -624,7 +619,7 @@ section {
   -o-background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed; }
+  background-attachment: scroll; }
 
 .header__logo-white {
   width: 30%; }
