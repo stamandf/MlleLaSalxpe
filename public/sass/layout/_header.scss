@@ -1,11 +1,16 @@
 
 .header {
     height: 100vh;
+    width: 100vw;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/AdobeStock_sunrise2.jpg);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-repeat: no-repeat;    
     background-position: center center;
     background-attachment: fixed;
+
 }
 
 .header__logo-white {
