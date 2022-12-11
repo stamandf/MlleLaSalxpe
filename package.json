@@ -17,7 +17,7 @@
   "author": "Florence <stamandf@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.4",
